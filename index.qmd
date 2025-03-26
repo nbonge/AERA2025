@@ -234,27 +234,24 @@ $$
 
 Model B1:
 
-$$
 \begin{align}
-\ln{(t_{ij})} &= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \epsilon_{ij} \newline
+\ln{(t_{ij})} &= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \epsilon_{ij} \\
 &=\mu + \nu_j +\beta_i +\gamma_4\delta_{ij}+\epsilon_{ij}
 \end{align}
-$$
+
 
 Model B2:
 
-$$
+
 \begin{align}
-\ln{(t_{ij})} &= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \gamma_1E_{ij}+\epsilon_{ij} \newline
+\ln{(t_{ij})} &= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \gamma_1E_{ij}+\epsilon_{ij} \\
 &=\mu + \nu_j +\beta_i +\gamma_4\delta_{ij}+\gamma_1 E_{ij}+\epsilon_{ij}
 \end{align}
-$$
 
 Model B3:
 
-$$
 \begin{align}
-\ln{(t_{ij})} &= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \gamma_1E_{ij}+\gamma_{14}E_{ij}a_i|\theta_j-\tau_{i,N}|+\epsilon_{ij} \newline
+\ln{(t_{ij})} &= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \gamma_1E_{ij}+\gamma_{14}E_{ij}a_i|\theta_j-\tau_{i,N}|+\epsilon_{ij} \\
 &=\mu + \nu_j +\beta_i +\gamma_4\delta_{ij}+\gamma_1 E_{ij}+\gamma_{14}E_{ij}\delta_{ij}+\epsilon_{ij}
 \end{align}
-$$
+
