@@ -1,5 +1,4 @@
-## The R > E Phenomenon and the Distance-Difficulty Hypothesis: 
-Modeling Response Time in Attitudinal Data
+## The R > E Phenomenon and the Distance-Difficulty Hypothesis: Modeling Response Time in Attitudinal Data
 
 This repository is associated with the poster presentation titled, 
 "The R > E Phenomenon and the Distance-Difficulty Hypothesis: 
