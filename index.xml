@@ -824,10 +824,426 @@ certain ability ranges may be related to item difficulty location.</p>
   practice of using response time in isolation to make determinations
   about respondent effort or item complexity and suitability.</p>
     </sec>
+    <sec id="references">
+      <title>References</title>
+    </sec>
+    <sec id="appendix">
+      <title>Appendix</title>
+      <sec id="appendix-1.-mach-iv-scale-items">
+        <title>Appendix 1. MACH-IV Scale Items</title>
+        <table-wrap>
+          <table>
+            <colgroup>
+              <col width="19%"/>
+              <col width="81%"/>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>
+                  <bold>Item</bold>
+                </td>
+                <td>
+                  <bold>Prompt</bold>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Never tell anyone the real reason you did something
+            unless it is useful to do so.</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>The best way to handle people is to tell them what they
+            want to hear.</td>
+              </tr>
+              <tr>
+                <td>3R</td>
+                <td>One should take action only when sure it is morally
+            right.</td>
+              </tr>
+              <tr>
+                <td>4R</td>
+                <td>Most people are basically good and kind.</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>It is safest to assume that all people have a vicious
+            streak and it will come out when they are given a
+            chance.</td>
+              </tr>
+              <tr>
+                <td>6R</td>
+                <td>Honesty is the best policy in all cases.</td>
+              </tr>
+              <tr>
+                <td>7R</td>
+                <td>There is no excuse for lying to someone else.</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Generally speaking, people won’t work hard unless
+            they’re forced to do so.</td>
+              </tr>
+              <tr>
+                <td>9R</td>
+                <td>All in all, it is better to be humble and honest than to
+            be important and dishonest.</td>
+              </tr>
+              <tr>
+                <td>10R</td>
+                <td>When you ask someone to do something for you, it is best
+            to give the real reasons for wanting it rather than giving
+            reasons which carry more weight.</td>
+              </tr>
+              <tr>
+                <td>11R</td>
+                <td>Most people who get ahead in the world lead clean, moral
+            lives.</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Anyone who completely trusts anyone else is asking for
+            trouble.</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>The biggest difference between most criminals and other
+            people is that the criminals are stupid enough to get
+            caught.</td>
+              </tr>
+              <tr>
+                <td>14R</td>
+                <td>Most people are brave.</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>It is wise to flatter important people.</td>
+              </tr>
+              <tr>
+                <td>16R</td>
+                <td>It is possible to be good in all respects.</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>P.T. Barnum was wrong when he said that there’s a sucker
+            born every minute.</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>It is hard to get ahead without cutting corners here and
+            there.</td>
+              </tr>
+              <tr>
+                <td>19*</td>
+                <td>People suffering from incurable diseases should have the
+            choice of being put painlessly to death.</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>Most people forget more easily the death of their
+            parents than the loss of their property.</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p><italic>Note.</italic> Items ending in * were dropped due to
+    insufficient factor loadings. Reprinted from Christie and Geis
+    (1970).</p>
+      </sec>
+      <sec id="appendix-2.-list-of-models-used">
+        <title>Appendix 2. List of Models Used</title>
+        <p>Null Model (Model 0):</p>
+        <p>
+          <disp-formula>
+            <alternatives>
+              <tex-math><![CDATA[
+    \ln{(t_{ij})} = \mu + \nu_j + \beta_i + \epsilon_{ij}
+    ]]></tex-math>
+              <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block">
+                <mml:mrow>
+                  <mml:mo>ln</mml:mo>
+                  <mml:mrow>
+                    <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                    <mml:msub>
+                      <mml:mi>t</mml:mi>
+                      <mml:mrow>
+                        <mml:mi>i</mml:mi>
+                        <mml:mi>j</mml:mi>
+                      </mml:mrow>
+                    </mml:msub>
+                    <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>=</mml:mo>
+                  <mml:mi>μ</mml:mi>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>ν</mml:mi>
+                    <mml:mi>j</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>β</mml:mi>
+                    <mml:mi>i</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>ϵ</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:math>
+            </alternatives>
+          </disp-formula>
+        </p>
+        <p>Model A1:</p>
+        <p>
+          <disp-formula>
+            <alternatives>
+              <tex-math><![CDATA[
+    \ln{(t_{ij})} = \mu + \nu_j + \beta_i + \gamma_1 E_{ij} + \epsilon_{ij}
+    ]]></tex-math>
+              <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block">
+                <mml:mrow>
+                  <mml:mo>ln</mml:mo>
+                  <mml:mrow>
+                    <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                    <mml:msub>
+                      <mml:mi>t</mml:mi>
+                      <mml:mrow>
+                        <mml:mi>i</mml:mi>
+                        <mml:mi>j</mml:mi>
+                      </mml:mrow>
+                    </mml:msub>
+                    <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>=</mml:mo>
+                  <mml:mi>μ</mml:mi>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>ν</mml:mi>
+                    <mml:mi>j</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>β</mml:mi>
+                    <mml:mi>i</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>γ</mml:mi>
+                    <mml:mn>1</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>E</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>ϵ</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:math>
+            </alternatives>
+          </disp-formula>
+        </p>
+        <p>Model A2:</p>
+        <p>
+          <disp-formula>
+            <alternatives>
+              <tex-math><![CDATA[
+    \ln{(t_{ij})} = \mu + \nu_j + \beta_i + \gamma_1 E_{ij} + \gamma_2\tau_{i,N} + \gamma_3 \theta_j + \epsilon_{ij}
+    ]]></tex-math>
+              <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block">
+                <mml:mrow>
+                  <mml:mo>ln</mml:mo>
+                  <mml:mrow>
+                    <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                    <mml:msub>
+                      <mml:mi>t</mml:mi>
+                      <mml:mrow>
+                        <mml:mi>i</mml:mi>
+                        <mml:mi>j</mml:mi>
+                      </mml:mrow>
+                    </mml:msub>
+                    <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>=</mml:mo>
+                  <mml:mi>μ</mml:mi>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>ν</mml:mi>
+                    <mml:mi>j</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>β</mml:mi>
+                    <mml:mi>i</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>γ</mml:mi>
+                    <mml:mn>1</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>E</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>γ</mml:mi>
+                    <mml:mn>2</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>τ</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mo>,</mml:mo>
+                      <mml:mi>N</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>γ</mml:mi>
+                    <mml:mn>3</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>θ</mml:mi>
+                    <mml:mi>j</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>ϵ</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:math>
+            </alternatives>
+          </disp-formula>
+        </p>
+        <p>Model A3:</p>
+        <p>
+          <disp-formula>
+            <alternatives>
+              <tex-math><![CDATA[
+    \ln{(t_{ij})} = \mu + \nu_j + \beta_i + \gamma_1 E_{ij} + \gamma_2\tau_{i,N} + \gamma_3 \theta_j + \gamma_{13} E_{ij} \theta_j+ \epsilon_{ij}
+    ]]></tex-math>
+              <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="block">
+                <mml:mrow>
+                  <mml:mo>ln</mml:mo>
+                  <mml:mrow>
+                    <mml:mo stretchy="true" form="prefix">(</mml:mo>
+                    <mml:msub>
+                      <mml:mi>t</mml:mi>
+                      <mml:mrow>
+                        <mml:mi>i</mml:mi>
+                        <mml:mi>j</mml:mi>
+                      </mml:mrow>
+                    </mml:msub>
+                    <mml:mo stretchy="true" form="postfix">)</mml:mo>
+                  </mml:mrow>
+                  <mml:mo>=</mml:mo>
+                  <mml:mi>μ</mml:mi>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>ν</mml:mi>
+                    <mml:mi>j</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>β</mml:mi>
+                    <mml:mi>i</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>γ</mml:mi>
+                    <mml:mn>1</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>E</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>γ</mml:mi>
+                    <mml:mn>2</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>τ</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mo>,</mml:mo>
+                      <mml:mi>N</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>γ</mml:mi>
+                    <mml:mn>3</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>θ</mml:mi>
+                    <mml:mi>j</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>γ</mml:mi>
+                    <mml:mn>13</mml:mn>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>E</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                  <mml:msub>
+                    <mml:mi>θ</mml:mi>
+                    <mml:mi>j</mml:mi>
+                  </mml:msub>
+                  <mml:mo>+</mml:mo>
+                  <mml:msub>
+                    <mml:mi>ϵ</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>i</mml:mi>
+                      <mml:mi>j</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:math>
+            </alternatives>
+          </disp-formula>
+        </p>
+        <p>Model B1:</p>
+        <p/>
+        <p>Model B2:</p>
+        <p/>
+        <p>Model B3:</p>
+        <p/>
+      </sec>
+    </sec>
   </body>
   <back>
     <ref-list>
-      <title>References</title>
+      <title/>
       <ref id="ref-Bassili1996">
         <element-citation publication-type="article-journal">
           <person-group person-group-type="author">
