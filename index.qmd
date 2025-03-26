@@ -96,7 +96,7 @@ We proceeded with the GRM, extracting each item’s neutral threshold ($\tau_{i,
 ## Table 2. Descriptive Statistics for Items
 
 |   |   |   | Response | Response Time |
-|----|----|----|----|----|
+|---------------|---------------|---------------|---------------|---------------|
 | Item | Item Neutral Threshold | Item Discrimination | M (SD) | M (SD) |
 | 1 | 0.30 | 1.94 | 2.87 (1.52) | 9,291.49 (8,165.46) |
 | 2 | 0.22 | 1.62 | 2.88 (1.46) | 7,775.72 (6,310.25) |
@@ -147,7 +147,7 @@ In Model A3, the added interaction between endorsement and trait level was not s
 
 All effects combined, Model A2 indicates that respondents took significantly longer to refute items than to endorse them, regardless of trait level or the item’s neutral threshold. Further, respondents took longer to answer items with higher neutral thresholds, but response time decreased with increasing trait level, holding all other variables constant. Figure 1 reflects this pattern.
 
-![Figure 1](images/Poster-Figure-1-01.png)
+![Figure 1](images/Poster-Figure-1-01.png){width="636"}
 
 ### Models Assessing the Distance-Difficulty Hypothesis
 
@@ -175,3 +175,86 @@ Response time is a metric often used to assess participants’ response effort a
 
 ::: {#refs}
 :::
+
+## Appendix {.unnumbered}
+
+### Appendix 1. MACH-IV Scale Items {.unnumbered}
+
+|  |  |
+|--------------|----------------------------------------------------------|
+| **Item** | **Prompt** |
+| 1 | Never tell anyone the real reason you did something unless it is useful to do so. |
+| 2 | The best way to handle people is to tell them what they want to hear. |
+| 3R | One should take action only when sure it is morally right. |
+| 4R | Most people are basically good and kind. |
+| 5 | It is safest to assume that all people have a vicious streak and it will come out when they are given a chance. |
+| 6R | Honesty is the best policy in all cases. |
+| 7R | There is no excuse for lying to someone else. |
+| 8 | Generally speaking, people won’t work hard unless they’re forced to do so. |
+| 9R | All in all, it is better to be humble and honest than to be important and dishonest. |
+| 10R | When you ask someone to do something for you, it is best to give the real reasons for wanting it rather than giving reasons which carry more weight. |
+| 11R | Most people who get ahead in the world lead clean, moral lives. |
+| 12 | Anyone who completely trusts anyone else is asking for trouble. |
+| 13 | The biggest difference between most criminals and other people is that the criminals are stupid enough to get caught. |
+| 14R | Most people are brave. |
+| 15 | It is wise to flatter important people. |
+| 16R | It is possible to be good in all respects. |
+| 17 | P.T. Barnum was wrong when he said that there’s a sucker born every minute. |
+| 18 | It is hard to get ahead without cutting corners here and there. |
+| 19\* | People suffering from incurable diseases should have the choice of being put painlessly to death. |
+| 20 | Most people forget more easily the death of their parents than the loss of their property. |
+
+*Note.* Items ending in \* were dropped due to insufficient factor loadings. Reprinted from Christie and Geis (1970).
+
+### Appendix 2. List of Models Used {.unnumbered}
+
+Null Model (Model 0):
+
+$$
+\ln{(t_{ij})} = \mu + \nu_j + \beta_i + \epsilon_{ij}
+$$
+
+Model A1:
+
+$$
+\ln{(t_{ij})} = \mu + \nu_j + \beta_i + \gamma_1 E_{ij} + \epsilon_{ij}
+$$
+
+Model A2:
+
+$$
+\ln{(t_{ij})} = \mu + \nu_j + \beta_i + \gamma_1 E_{ij} + \gamma_2\tau_{i,N} + \gamma_3 \theta_j + \epsilon_{ij}
+$$
+
+Model A3:
+
+$$
+\ln{(t_{ij})} = \mu + \nu_j + \beta_i + \gamma_1 E_{ij} + \gamma_2\tau_{i,N} + \gamma_3 \theta_j + \gamma_{13} E_{ij} \theta_j+ \epsilon_{ij}
+$$
+
+Model B1:
+
+$$
+\begin{align}
+\ln{(t_{ij})} &= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \epsilon_{ij} \newline
+&=\mu + \nu_j +\beta_i +\gamma_4\delta_{ij}+\epsilon_{ij}
+\end{align}
+$$
+
+Model B2:
+
+$$
+\begin{align}
+\ln{(t_{ij})} &= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \gamma_1E_{ij}+\epsilon_{ij} \newline
+&=\mu + \nu_j +\beta_i +\gamma_4\delta_{ij}+\gamma_1 E_{ij}+\epsilon_{ij}
+\end{align}
+$$
+
+Model B3:
+
+$$
+\begin{align}
+\ln{(t_{ij})} &= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \gamma_1E_{ij}+\gamma_{14}E_{ij}a_i|\theta_j-\tau_{i,N}|+\epsilon_{ij} \newline
+&=\mu + \nu_j +\beta_i +\gamma_4\delta_{ij}+\gamma_1 E_{ij}+\gamma_{14}E_{ij}\delta_{ij}+\epsilon_{ij}
+\end{align}
+$$
