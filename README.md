@@ -1,4 +1,8 @@
-## A Quarto Manuscript Template
+## The R > E Phenomenon and the Distance-Difficulty Hypothesis: 
+Modeling Response Time in Attitudinal Data
 
-This is a template repo for generating a manuscript from Quarto that accompanies the tutorial at: [Quarto Manuscripts: RStudio](https://quarto.org/docs/manuscripts/authoring/rstudio.html)
-
+This repository is associated with the poster presentation titled, 
+"The R > E Phenomenon and the Distance-Difficulty Hypothesis: 
+Modeling Response Time in Attitudinal Data," presented at the 2025 AERA
+Annual Conference. Thanks for visiting and please feel free to reach out
+with any questions or comments!
