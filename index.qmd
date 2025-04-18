@@ -19,6 +19,7 @@ abstract: |
   Response time (or response latency) is a commonly used metric to assess item characteristics such as quality or comprehensibility, and respondent characteristics such as fatigue or effort. In this study, we apply response time models to attitudinal data, showing that survey item response time is related to a respondent’s latent trait level and item difficulty in relation to the respondent’s latent trait level (distance-difficulty hypothesis). We also investigate the R > E phenomenon, demonstrating that respondents take longer to refute items than to endorse them. Our results indicate that response time involves complex cognitive processes, and we caution researchers against using response time as a metric when assessing item or respondent characteristics (such as respondent effort or item quality) without controlling for other factors such as trait level, distance-difficulty item-person relationships, and item agreement. It is recommended that researchers conducting data quality assessments evaluate the occurrence of low data quality flagging for participants at different construct levels, to determine whether overidentification of participants in certain ability ranges may be related to item difficulty location.
 date: 04/27/2025
 published-title: "Presentation Date"
+csl: apa.csl
 bibliography: references.bib
 number-sections: true
 toc-location: left
@@ -1240,3 +1241,17 @@ Model B3:
 \end{align}
 
 
+```{=html}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.querySelector(".sidebar nav");
+    if (sidebar) {
+      const link = document.createElement("a");
+      link.href = "https://github.com/nbonge/AERA2025/blob/main/AERA2025-ProjectCode.R";
+      link.target = "_blank";
+      link.textContent = "View R Code on GitHub";
+      link.className = "github-link";  // 👈 Uses your CSS
+      sidebar.appendChild(link);
+    }
+  });
+</script>

@@ -1,0 +1,4 @@
+- source: index.qmd
+  quarto-pub:
+    - id: 5ec44678-f699-4e64-bda5-989275ca1643
+      url: https://nbonge.quarto.pub/aera2025
