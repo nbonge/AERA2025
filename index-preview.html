@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
     <meta charset="utf-8">
-    <meta name="generator" content="quarto-1.7.27">
+    <meta name="generator" content="quarto-1.6.42">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-    <meta name="author" content="Steve Purves">
-    <meta name="author" content="Rowan Cockett">
-    <meta name="dcterms.date" content="2025-04-18">
-    <meta name="keywords" content="La Palma, Earthquakes">
+    <meta name="author" content="Nicole G. Bonge">
+    <meta name="author" content="Ronna C. Turner">
+    <meta name="dcterms.date" content="2025-04-27">
+    <meta name="keywords" content="Response Time, Item Response Theory, Distance-Difficulty Hypothesis, F > C Phenomenon">
 
-    <title>La Palma Earthquakes</title>
+    <title>The R &gt; E Phenomenon and the Distance-Difficulty Hypothesis: Modeling Response Time in Attitudinal Data</title>
     <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -22,41 +22,6 @@
         width: 0.8em;
         margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
         vertical-align: middle;
-      }
-      /* CSS for syntax highlighting */
-      html { -webkit-text-size-adjust: 100%; }
-      pre > code.sourceCode { white-space: pre; position: relative; }
-      pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-      pre > code.sourceCode > span:empty { height: 1.2em; }
-      .sourceCode { overflow: visible; }
-      code.sourceCode > span { color: inherit; text-decoration: inherit; }
-      div.sourceCode { margin: 1em 0; }
-      pre.sourceCode { margin: 0; }
-      @media screen {
-      div.sourceCode { overflow: auto; }
-      }
-      @media print {
-      pre > code.sourceCode { white-space: pre-wrap; }
-      pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-      }
-      pre.numberSource code
-        { counter-reset: source-line 0; }
-      pre.numberSource code > span
-        { position: relative; left: -4em; counter-increment: source-line; }
-      pre.numberSource code > span > a:first-child::before
-        { content: counter(source-line);
-          position: relative; left: -1em; text-align: right; vertical-align: baseline;
-          border: none; display: inline-block;
-          -webkit-touch-callout: none; -webkit-user-select: none;
-          -khtml-user-select: none; -moz-user-select: none;
-          -ms-user-select: none; user-select: none;
-          padding: 0 4px; width: 4em;
-        }
-      pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-      div.sourceCode
-        {   }
-      @media screen {
-      pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
       }
       /* CSS for citations */
       div.csl-bib-body { }
@@ -172,16 +137,15 @@
     
 <script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-985aa47af68dae11cd4d235c71fb941e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5969b9817b206770ea340465a80d02b7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-10daa034703793678e481cc8cee6d76f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -191,22 +155,51 @@
     document.body.classList.add('hypothesis-enabled');
   });
 </script>   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script> 
-      <meta name="citation_title" content="La Palma Earthquakes">
-<meta name="citation_abstract" content="In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). ...
+        <link rel="stylesheet" href="style.css">
+      <meta name="citation_title" content="The R &amp;amp;gt; E Phenomenon and the Distance-Difficulty Hypothesis: Modeling Response Time in Attitudinal Data">
+<meta name="citation_abstract" content="Response time (or response latency) is a commonly used metric to assess item characteristics such as quality or comprehensibility, and respondent characteristics such as fatigue or effort. In this study, we apply response time models to attitudinal data, showing that survey item response time is related to a respondent’s latent trait level and item difficulty in relation to the respondent’s latent trait level (distance-difficulty hypothesis). We also investigate the R &amp;amp;gt; E phenomenon, demonstrating that respondents take longer to refute items than to endorse them. Our results indicate that response time involves complex cognitive processes, and we caution researchers against using response time as a metric when assessing item or respondent characteristics (such as respondent effort or item quality) without controlling for other factors such as trait level, distance-difficulty item-person relationships, and item agreement. It is recommended that researchers conducting data quality assessments evaluate the occurrence of low data quality flagging for participants at different construct levels, to determine whether overidentification of participants in certain ability ranges may be related to item difficulty location.
 ">
-<meta name="citation_keywords" content="La Palma,Earthquakes">
-<meta name="citation_author" content="Steve Purves">
-<meta name="citation_author" content="Rowan Cockett">
-<meta name="citation_publication_date" content="2025-04-18">
-<meta name="citation_cover_date" content="2025-04-18">
+<meta name="citation_keywords" content="Response Time,Item Response Theory,Distance-Difficulty Hypothesis,F > C Phenomenon">
+<meta name="citation_author" content="Nicole G. Bonge">
+<meta name="citation_author" content="Ronna C. Turner">
+<meta name="citation_publication_date" content="2025-04-27">
+<meta name="citation_cover_date" content="2025-04-27">
 <meta name="citation_year" content="2025">
-<meta name="citation_online_date" content="2025-04-18">
+<meta name="citation_online_date" content="2025-04-27">
 <meta name="citation_language" content="en">
-<meta name="citation_journal_title" content="Earth and Space Science">
-<meta name="citation_reference" content="citation_title=Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands);,citation_author=José Marrero;,citation_author=Alicia García;,citation_author=Manuel Berrocoso;,citation_author=Ángeles Llinares;,citation_author=Antonio Rodríguez-Losada;,citation_author=R. Ortiz;,citation_publication_date=2019-07;,citation_cover_date=2019-07;,citation_year=2019;,citation_doi=10.1186/s13617-019-0085-5;,citation_volume=8;,citation_journal_title=Journal of Applied Volcanology;">
+<meta name="citation_reference" content="citation_title=Response latency as a signal to question problems in survey research;,citation_abstract=This research explores the potential utility of response latency as an index of question problems in survey research. The time respondents took to answer three types of bad questions was compared to the time they took to answer the repaired versions of the questions. Questions containing a superfluous negative and double-barreled questions took longer to answer than nearly identical questions without these problems. Repaired versions of questions soliciting frequency estimates, however, took longer to answer than their problematic counterparts. The results are discussed in the context of a model of question answering, and their implications for survey methodology are explored. Survey methodologists have expressed considerable interest recently in techniques for screening survey questions with the aim of repairing bad questions before presenting them to large numbers of respondents (see Presser and Blair 1994). A number of approaches for the early identification of question problems have been explored. Observational monitoring focuses on the interaction between the interviewer and respondent and relies on a behavior-coding scheme to identify problems (e.g., Fowler and Cannell 19;,citation_author=John N Bassili;,citation_author=B Stacey Scott;,citation_publication_date=1996;,citation_cover_date=1996;,citation_year=1996;,citation_fulltext_html_url=https://academic.oup.com/poq/article/60/3/390/1832313;,citation_isbn=60/3/390/1832313;,citation_volume=60;,citation_journal_title=Public Opinion Quarterly;">
+<meta name="citation_reference" content="citation_title=Fitting linear mixed-effects models using lme4;,citation_author=Douglas Bates;,citation_author=Martin Mächler;,citation_author=Ben Bolker;,citation_author=Steve Walker;,citation_publication_date=2015;,citation_cover_date=2015;,citation_year=2015;,citation_doi=10.18637/jss.v067.i01;,citation_issn=1548-7660;,citation_volume=67;,citation_journal_title=Journal of Statistical Software;">
+<meta name="citation_reference" content="citation_title=Differentielle latenzzeitefekte bei der bearbeitung von reasoning-items;,citation_author=Jens F. Beckmann;,citation_publication_date=2000;,citation_cover_date=2000;,citation_year=2000;,citation_volume=46;,citation_journal_title=Diagnostica;">
+<meta name="citation_reference" content="citation_title=The quick and the careless: The construct validity of page time as a measure of insufficient effort responding to surveys;,citation_abstract=Several recent studies have examined the prevention, causes, and consequences of insufficient effort responding (IER) to surveys. Scientific progress in this area, however, rests on the availability of construct-valid IER measures. In the current paper we describe the potential merits of the page time index, which is computed by counting the number of questionnaire pages to which a participant has responded more quickly than two seconds per item (see Huang et al., 2012). We conducted three studies (total N = 1,056) to examine the page time index’s construct validity. Across these studies, we found that page time converged highly with other IER indices, that it was sensitive to an experimental manipulation warning participants to respond carefully, and that it predicted the extent to which participants were unable to recognize item content. We also found that page time’s validity was superior to that of total completion time and that the two-seconds-per-item rule yielded a construct-valid page time score for items of various word lengths. Given its apparent validity, we provide practical recommendations for the use of the page time index.;,citation_author=Nathan A. Bowling;,citation_author=Jason L. Huang;,citation_author=Cheyna K. Brower;,citation_author=Caleb B. Bragg;,citation_publication_date=2023-04;,citation_cover_date=2023-04;,citation_year=2023;,citation_doi=10.1177/10944281211056520;,citation_issn=15527425;,citation_volume=26;,citation_journal_title=Organizational Research Methods;,citation_publisher=SAGE Publications Inc.;">
+<meta name="citation_reference" content="citation_title=Mirt: A multidimensional item response theory package for the r environment;,citation_author=R. Philip Chalmers;,citation_publication_date=2012;,citation_cover_date=2012;,citation_year=2012;,citation_doi=10.18637/jss.v048.i06;,citation_issn=1548-7660;,citation_volume=48;,citation_journal_title=Journal of Statistical Software;">
+<meta name="citation_reference" content="citation_title=Studies in machiavellianism;,citation_author=Richard Christie;,citation_author=Florence L. Geis;,citation_publication_date=1970;,citation_cover_date=1970;,citation_year=1970;,citation_doi=10.1016/C2013-0-10497-7;,citation_isbn=9780121744502;">
+<meta name="citation_reference" content="citation_title=An overview of models for response times and processes in cognitive tests;,citation_abstract=Response times (RTs) are a natural kind of data to investigate cognitive processes underlying cognitive test performance. We give an overview of modeling approaches and of findings obtained with these approaches. Four types of models are discussed: response time models (RT as the sole dependent variable), joint models (RT together with other variables as dependent variable), local dependency models (with remaining dependencies between RT and accuracy), and response time as covariate models (RT as independent variable). The evidence from these approaches is often not very informative about the specific kind of processes (other than problem solving, information accumulation, and rapid guessing), but the findings do suggest dual processing: automated processing (e.g., knowledge retrieval) vs. controlled processing (e.g., sequential reasoning steps), and alternative explanations for the same results exist. While it seems well-possible to differentiate rapid guessing from normal problem solving (which can be based on automated or controlled processing), further decompositions of response times are rarely made, although possible based on some of model approaches.;,citation_author=Paul De Boeck;,citation_author=Minjeong Jeon;,citation_publication_date=2019-02;,citation_cover_date=2019-02;,citation_year=2019;,citation_doi=10.3389/fpsyg.2019.00102;,citation_issn=16641078;,citation_volume=10;,citation_journal_title=Frontiers in Psychology;,citation_publisher=Frontiers Media S.A.;">
+<meta name="citation_reference" content="citation_title=Dirty data: The effects of screening respondents who provide low-quality data in survey research;,citation_abstract=The purpose of this study is to empirically address questions pertaining to the effects of data screening practices in survey research. This study addresses questions about the impact of screening techniques on data and statistical analyses. It also serves an initial attempt to estimate descriptive statistics and graphically display the distributions of popular screening techniques. Data were obtained from an online sample who completed demographic items and measures of character strengths (N&nbsp;=&nbsp;307). Screening indices demonstrate minimal overlap and differ in the number of participants flagged. Existing cutoff scores for most screening techniques seem appropriate, but cutoff values for consistency-based indices may be too liberal. Screens differ in the extent to which they impact survey results. The use of screening techniques can impact inter-item correlations, inter-scale correlations, reliability estimates, and statistical results. While data screening can improve the quality and trustworthiness of data, screening techniques are not interchangeable. Researchers and practitioners should be aware of the differences between data screening techniques and apply appropriate screens for their survey characteristics and study design. Low-impact direct and unobtrusive screens such as self-report indicators, bogus items, instructed items, longstring, individual response variability, and response time are relatively simple to administer and analyze. The fact that data screening can influence the statistical results of a study demonstrates that low-quality data can distort hypothesis testing in organizational research and practice. We recommend analyzing results both before and after screens have been applied.;,citation_author=Justin A. DeSimone;,citation_author=P. D. Harms;,citation_publication_date=2018-10;,citation_cover_date=2018-10;,citation_year=2018;,citation_doi=10.1007/s10869-017-9514-9;,citation_issn=08893268;,citation_volume=33;,citation_journal_title=Journal of Business and Psychology;,citation_publisher=Springer New York LLC;">
+<meta name="citation_reference" content="citation_title=A measurement model for likert responses that incorporates response time;,citation_abstract=This article describes a model for response times that is proposed as a supplement to the usual factor-analytic model for responses to graded or more continuous typical-response items. The use of the proposed model together with the factor model provides additional information about the respondent and can potentially increase the accuracy of the individual trait estimates. First, the rationale of the model is discussed in relation to previous developments in binary responses. Sec- ond, procedures for fitting the model and for assessing model-data fit at both overall and individual level (person-fit) are proposed. Third, the usefulness of the model and its potential applications in the typical-response domain are discussed. All the proposed developments are used in 2 empirical applications in the person- ality domain. The first application analyzes 2 scales from a Big Five questionnaire. The second example analyzes a sociability scale developed from Eysenck’s ques- tionnaires.;,citation_author=Pere J. Ferrando;,citation_author=Urbano Lorenzo-Seva;,citation_publication_date=2007-12;,citation_cover_date=2007-12;,citation_year=2007;,citation_doi=10.1080/00273170701710247;,citation_issn=0027-3171;,citation_volume=42;,citation_journal_title=Multivariate Behavioral Research;,citation_publisher=Informa UK Limited;">
+<meta name="citation_reference" content="citation_title=Person-item distance and response time: An empirical study in personality measurement;,citation_abstract=’Rovira i Virgili’ University (Spain) This study assessed the hypothesis that the response time to an item increases as the positions of the item and the respondent on the continuum of the trait that is measured draw closer together. This hypothesis has previously been stated by several authors, but so far it does not seem to have been empirically assessed in a rigorous way. A computerized version of a 22-item two-scale personality questionnaire was administered to a sample of 286 respondents. The item responses were fitted using the two-parameter IRT model and a person-item distance measure was derived. Product-moment correlations between the log-response times and the person-item distances were obtained over respondents within each item. In both scales all the correlations were negative, as expected from the theory. However, most of the correlations (effect sizes) were small. The potential usefulness of the results for personality measurement is discussed.;,citation_author=Pere J Ferrando;,citation_publication_date=2006;,citation_cover_date=2006;,citation_year=2006;,citation_volume=27;,citation_journal_title=Psicológica;">
+<meta name="citation_reference" content="citation_title=An item response theory model for incorporating response time data in binary personality items;,citation_abstract=This article describes a general item response theory model for personality items that allows the information provided by the item response times to be used to estimate the individual trait levels. The submodel describing the item response times is a modification of Thissen’s log-linear model and is based on the distance-difficulty hypothesis in personality measurement. First, the procedures for fitting the model and assessing the goodness of fit are described. Second, the gain in the precision of estimating the individual trait levels when the information provided by the response times is used is assessed. Finally, all the developments in this article are illustrated by means of an empirical example. © 2007 Sage Publications.;,citation_author=Pere J. Ferrando;,citation_author=Urbano Lorenzo-Seva;,citation_publication_date=2007-11;,citation_cover_date=2007-11;,citation_year=2007;,citation_doi=10.1177/0146621606295197;,citation_issn=01466216;,citation_volume=31;,citation_journal_title=Applied Psychological Measurement;">
+<meta name="citation_reference" content="citation_title=An r companion to applied regression;,citation_author=John Fox;,citation_author=Sanford Weisberg;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;">
+<meta name="citation_reference" content="citation_title=Aging effects on cognitive and noncognitive factors in creativity;,citation_abstract=Adult age is associated with relatively intact crystallized abilities but with declines in fluid abilities, in working memory and in learning. Reduced processing speed may explain these changes and could be due to a range of neurological and cardiovascular changes. Hearing impairment is correlated with cognitive impairment and risk of Alzheimer’s disease (AD). Difficulties with visual pattern restructuring with age may impact on insight problems. Negative age effects are less with real-world problems, and some positive age effects have been found on “wisdom” tasks. Personality measures relevant to creativity were found to be remarkably stable over many years and into old age in longitudinal studies. However, there were small declining average trends, particularly in openness, and some variability over time, linked to life events such as retirement and illness. A U-shaped curve for happiness with age with a final declining phase in late life. Age led to more broken sleep, with longer time in rapid eye movement (REM) but less in slow wave sleep (SWS). AD and other dementias generally have a devastating effect on creativity. Early and mid-life engagement with cognitively demanding activities is associated with lower risks of later cognitive decline and Alzheimer’s disease.;,citation_author=Kenneth J. Gilhooly;,citation_author=Mary L. M. Gilhooly;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_doi=10.1016/b978-0-12-816401-3.00008-1;,citation_inbook_title=Aging and creativity;">
+<meta name="citation_reference" content="citation_title=Interpersonal agreement and disagreement during face-to-face dialogue: An fNIRS investigation;,citation_abstract=Although the neural systems that underlie spoken language are well-known, how they adapt to evolving social cues during natural conversations remains an unanswered question. In this work we investigate the neural correlates of face-to-face conversations between two individuals using functional near infrared spectroscopy (fNIRS) and acoustical analyses of concurrent audio recordings. Nineteen pairs of healthy adults engaged in live discussions on two controversial topics where their opinions were either in agreement or disagreement. Participants were matched according to their a priori opinions on these topics as assessed by questionnaire. Acoustic measures of the recorded speech including the fundamental frequency range, median fundamental frequency, syllable rate, and acoustic energy were elevated during disagreement relative to agreement. Consistent with both the a priori opinion ratings and the acoustic findings, neural activity associated with long-range functional networks, rather than the canonical language areas, was also differentiated by the two conditions. Specifically, the frontoparietal system including bilateral dorsolateral prefrontal cortex, left supramarginal gyrus, angular gyrus, and superior temporal gyrus showed increased activity while talking during disagreement. In contrast, talking during agreement was characterized by increased activity in a social and attention network including right supramarginal gyrus, bilateral frontal eye-fields, and left frontopolar regions. Further, these social and visual attention networks were more synchronous across brains during agreement than disagreement. Rather than localized modulation of the canonical language system, these findings are most consistent with a model of distributed and adaptive language-related processes including cross-brain neural coupling that serves dynamic verbal exchanges.;,citation_author=Joy Hirsch;,citation_author=Mark Tiede;,citation_author=Xian Zhang;,citation_author=J. Adam Noah;,citation_author=Alexandre Salama-Manteau;,citation_author=Maurice Biriotti;,citation_publication_date=2021-01;,citation_cover_date=2021-01;,citation_year=2021;,citation_doi=10.3389/fnhum.2020.606397;,citation_issn=16625161;,citation_volume=14;,citation_journal_title=Frontiers in Human Neuroscience;,citation_publisher=Frontiers Media S.A.;">
+<meta name="citation_reference" content="citation_title=Investigating cognitive effort and response quality of question formats in web surveys using paradata;,citation_abstract=Measuring attitudes and opinions employing agree/disagree (A/D) questions is a common method in social research because it appears to be possible to measure different constructs with identical response scales. However, theoretical considerations suggest that A/D questions require a considerable cognitive processing. Item-specific (IS) questions, in contrast, offer content-related response categories, implying less cognitive processing. To investigate the respective cognitive effort and response quality associated with A/D and IS questions, we conducted a web-based experiment with 1,005 students. Cognitive effort was assessed by response times and answer changes. Response quality, in contrast, was assessed by different indicators such as dropouts. According to our results, single IS questions require higher cognitive effort than single A/D questions in terms of response times. Moreover, our findings show substantial differences in processing single and grid questions.;,citation_author=Jan Karem Höhne;,citation_author=Stephan Schlosser;,citation_author=Dagmar Krebs;,citation_publication_date=2017-11;,citation_cover_date=2017-11;,citation_year=2017;,citation_doi=10.1177/1525822X17710640;,citation_issn=15523969;,citation_volume=29;,citation_journal_title=Field Methods;,citation_publisher=SAGE Publications Inc.;">
+<meta name="citation_reference" content="citation_title=Detecting and deterring insufficient effort responding to surveys;,citation_abstract=Purpose: Responses provided by unmotivated survey participants in a careless, haphazard, or random fashion can threaten the quality of data in psychological and organizational research. The purpose of this study was to summarize existing approaches to detect insufficient effort responding (IER) to low-stakes surveys and to comprehensively evaluate these approaches. Design/Methodology/Approach: In an experiment (Study 1) and a nonexperimental survey (Study 2), 725 undergraduates responded to a personality survey online. Findings: Study 1 examined the presentation of warnings to respondents as a means of deterrence and showed the relative effectiveness of four indices for detecting IE responses: response time, long string, psychometric antonyms, and individual reliability coefficients. Study 2 demonstrated that the detection indices measured the same underlying construct and showed the improvement of psychometric properties (item interrelatedness, facet dimensionality, and factor structure) after removing IE respondents identified by each index. Three approaches (response time, psychometric antonyms, and individual reliability) with high specificity and moderate sensitivity were recommended as candidates for future application in survey research. Implications: The identification of effective IER indices may help researchers ensure the quality of their low-stake survey data. Originality/value: This study is a first attempt to comprehensively evaluate IER detection methods using both experimental and nonexperimental designs. Results from both studies corroborated each other in suggesting the three more effective approaches. This study also provided convergent validity evidence regarding various indices for IER. © 2011 Springer Science+Business Media, LLC.;,citation_author=Jason L. Huang;,citation_author=Paul G. Curran;,citation_author=Jessica Keeney;,citation_author=Elizabeth M. Poposki;,citation_author=Richard P. DeShon;,citation_publication_date=2012-03;,citation_cover_date=2012-03;,citation_year=2012;,citation_doi=10.1007/s10869-011-9231-8;,citation_issn=08893268;,citation_volume=27;,citation_journal_title=Journal of Business and Psychology;">
+<meta name="citation_reference" content="citation_title=The dark triad traits and intelligence: Machiavellians are bright, and narcissists and psychopaths are ordinary;,citation_abstract=Extant empirical research, despite some theoretical descriptions, has consistently demonstrated that the Dark Triad is not related to general mental ability. In the present study, we investigated the relationship between the Dark Triad of personality (narcissism, Machiavellianism, and psychopathy) and fluid intelligence. A sample of 128 Polish high school students (Mage = 16.89 years; SDage = 0.31; 28.1;,citation_author=Christopher Marcin Kowalski;,citation_author=Katarzyna Kwiatkowska;,citation_author=Maria Magdalena Kwiatkowska;,citation_author=Klaudia Ponikiewska;,citation_author=Radosław Rogoza;,citation_author=Julie Aitken Schermer;,citation_publication_date=2018-12;,citation_cover_date=2018-12;,citation_year=2018;,citation_doi=10.1016/j.paid.2018.06.049;,citation_issn=01918869;,citation_volume=135;,citation_journal_title=Personality and Individual Differences;,citation_publisher=Elsevier Ltd;">
+<meta name="citation_reference" content="citation_title=Response strategies for coping with the cognitive demands of attitude measures in surveys;,citation_abstract=This paper proposes that when optimally answering a survey question would require substantial cognitive effort, some repondents simply provide a satisfactory answer instead. This behaviour, called satisficing, can take the form of either (1) incomplete or biased information retrieval and/or information integration, or (2) no information retrieval or integration at all. Satisficing may lead respondents to employ a variety of response strategies, including choosing the first response alternative that seems to constitute a reasonable answer, agreeing with an assertion made by a question, endorsing the status quo instead of endorsing social change, failing to differentiate among a set of diverse objects in ratings, saying “don’t know” instead of reporting an opinion, and randomly choosing among the response alternatives offered. This paper specifies a wide range of factors that are likely to encourage satisficing, and reviews relevant evidence evaluating these speculations. Many useful directions for future research are suggested. Copyright © 1991 John Wiley &amp;amp;amp; Sons, Ltd;,citation_author=Jon A. Krosnick;,citation_publication_date=1991;,citation_cover_date=1991;,citation_year=1991;,citation_doi=10.1002/acp.2350050305;,citation_issn=10990720;,citation_volume=5;,citation_journal_title=Applied Cognitive Psychology;">
+<meta name="citation_reference" content="citation_title=lmerTest package: Tests in linear mixed effects models;,citation_author=Alexandra Kuznetsova;,citation_author=Per B. Brockhoff;,citation_author=Rune H. B. Christensen;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_doi=10.18637/jss.v082.i13;,citation_issn=1548-7660;,citation_volume=82;,citation_journal_title=Journal of Statistical Software;">
+<meta name="citation_reference" content="citation_title=Effects of survey question comprehensibility on response quality;,citation_abstract=Many studies have shown that vague or ambiguous questions are often interpreted idiosyncratically by respondents and thus can increase measurement error. This article provides some evidence that the cognitive effort required to comprehend survey questions affects data quality in a similar way. A web survey experiment revealed that respondents receiving less comprehensible questions provided lower-quality responses (as indicated by breakoff rates, number of nonsubstantive responses, number of neutral responses, and over-time consistency) than respondents receiving control questions that were easier to comprehend. Moreover, interaction effects of question comprehensibility with respondents’ verbal skills and their motivation to answer surveys were found. These findings indicate that survey designers should minimize the cognitive effort required to comprehend their questions and the article suggests specific ways how to do so. © The Author(s) 2012.;,citation_author=Timo Lenzner;,citation_publication_date=2012-11;,citation_cover_date=2012-11;,citation_year=2012;,citation_doi=10.1177/1525822X12448166;,citation_issn=1525822X;,citation_volume=24;,citation_journal_title=Field Methods;">
+<meta name="citation_reference" content="citation_title=Cognitive burden of survey questions and response times: A psycholinguistic experiment;,citation_abstract=An important objective in survey question design is to write clear questions that respondents find easy to understand and to answer. This contribution identifies the factors that influence question clarity. Theoretical and empirical evidence from psycholinguistics suggests that specific text features (e.g., low-frequency words (LFRWs), left-embedded syntax) cause comprehension difficulties and impose a high cognitive burden on respondents. To examine the effect of seven different text features on question clarity, an online experiment was conducted in which well-formulated questions were compared to suboptimal counterparts. The cognitive burden of the questions was assessed with response times. Data quality was compared in terms of drop-out rates and survey satisficing behaviour. The results show that at least six of the text features are relevant for the clarity of a question. We provide a detailed explanation of these text features and advise survey designers to avoid them when crafting questions. Copyright © 2009 John Wiley &amp;amp;amp; Sons, Ltd. Copyright © 2009 John Wiley &amp; Sons, Ltd.;,citation_author=Timo Lenzner;,citation_author=Lars Kaczmirek;,citation_author=Alwine Lenzner;,citation_publication_date=2010-10;,citation_cover_date=2010-10;,citation_year=2010;,citation_doi=10.1002/acp.1602;,citation_issn=08884080;,citation_volume=24;,citation_journal_title=Applied Cognitive Psychology;">
+<meta name="citation_reference" content="citation_title=Tired of survey fatigue? Insufficient effort responding due to survey fatigue;,citation_author=Hung Loan T. Nguyen;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_dissertation_institution=Middle Tennessee State University;">
+<meta name="citation_reference" content="citation_title=R: A language and environment for statistical computing;,citation_author=R Core Team;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_fulltext_html_url=http://www.R-project.org/;,citation_publisher=R Foundation for Statistical Computing;">
+<meta name="citation_reference" content="citation_title=Performance of nonparametric person-fit statistics with unfolding versus dominance response models;,citation_abstract=Person-fit analyses are commonly used to detect aberrant responding in self-report data. Nonparametric person fit statistics do not require fitting a parametric test theory model and have performed well compared to other person-fit statistics. However, detection of aberrant responding has primarily focused on dominance response data, thus the effectiveness of person-fit statistics in detecting different aberrant behaviors in ideal point data is unclear. This study compares the performance of nonparametric person-fit statistics in unfolding and dominance model contexts. Results for dominance data indicate that increases in detection rates depend, among other factors, on type of aberrant responding and person-fit statistic used. The detection of aberrant responses in ideal point data was ineffective using four nonparametric person-fit statistics, with slightly higher type I error and power less than 0.25. Additional research is needed to identify or develop nonparametric or parametric person-fit statistics effective for aberrant behavior exhibited in ideal point data.;,citation_author=Jennifer Reimers;,citation_author=Ronna C. Turner;,citation_author=Jorge N. Tendeiro;,citation_author=Wen Juo Lo;,citation_author=Elizabeth Keiffer;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_doi=10.1080/15366367.2023.2165891;,citation_issn=15366359;,citation_volume=21;,citation_journal_title=Measurement;,citation_publisher=Routledge;">
+<meta name="citation_reference" content="citation_title=Psych: Procedures for psychological, psychometric, and personality research;,citation_author=William Revelle;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_fulltext_html_url=https://CRAN.R-project.org/package=psych;">
+<meta name="citation_reference" content="citation_title=Faster ≠ smarter: Children with higher levels of ability take longer to give incorrect answers, especially when the task matches their ability;,citation_abstract=The stereotype that children who are more able solve tasks quicker than their less capable peers exists both in and outside education. The F &amp;amp;amp;gt; C phenomenon and the distance–difficulty hypothesis offer alternative explanations of the time needed to complete a task; the former by the response correctness and the latter by the relative difference between the difficulty of the task and the ability of the examinee. To test these alternative explanations, we extracted IRT-based ability estimates and task difficulties from a sample of 514 children, 53;,citation_author=Martin Tancoš;,citation_author=Edita Chvojka;,citation_author=Michal Jabůrek;,citation_author=Šárka Portešová;,citation_publication_date=2023-04;,citation_cover_date=2023-04;,citation_year=2023;,citation_doi=10.3390/jintelligence11040063;,citation_issn=20793200;,citation_volume=11;,citation_journal_title=Journal of Intelligence;,citation_publisher=MDPI;">
+<meta name="citation_reference" content="citation_title=Timed testing- an approach using item response theory;,citation_author=David Thissen;,citation_publication_date=1983;,citation_cover_date=1983;,citation_year=1983;,citation_inbook_title=New horizons in testing: Latent trait test theory and computerized adaptive testing;">
+<meta name="citation_reference" content="citation_title=A response-time-based latent response mixture model for identifying and modeling careless and insufficient effort responding in survey data;,citation_abstract=Careless and insufficient effort responding (C/IER) can pose a major threat to data quality and, as such, to validity of inferences drawn from questionnaire data. A rich body of methods aiming at its detection has been developed. Most of these methods can detect only specific types of C/IER patterns. However, typically different types of C/IER patterns occur within one data set and need to be accounted for. We present a model-based approach for detecting manifold manifestations of C/IER at once. This is achieved by leveraging response time (RT) information available from computer-administered questionnaires and integrating theoretical considerations on C/IER with recent psychometric modeling approaches. The approach a) takes the specifics of attentive response behavior on questionnaires into account by incorporating the distance–difficulty hypothesis, b) allows for attentiveness to vary on the screen-by-respondent level, c) allows for respondents with different trait and speed levels to differ in their attentiveness, and d) at once deals with various response patterns arising from C/IER. The approach makes use of item-level RTs. An adapted version for aggregated RTs is presented that supports screening for C/IER behavior on the respondent level. Parameter recovery is investigated in a simulation study. The approach is illustrated in an empirical example, comparing different RT measures and contrasting the proposed model-based procedure against indicator-based multiple-hurdle approaches.;,citation_author=Esther Ulitzsch;,citation_author=Steffi Pohl;,citation_author=Lale Khorramdel;,citation_author=Ulf Kroehne;,citation_author=Matthias Davier;,citation_publication_date=2022-06;,citation_cover_date=2022-06;,citation_year=2022;,citation_doi=10.1007/s11336-021-09817-7;,citation_issn=18600980;,citation_pmid=34855118;,citation_volume=87;,citation_journal_title=Psychometrika;,citation_publisher=Springer;">
+<meta name="citation_reference" content="citation_title=Using response times to detect aberrant responses in computerized adaptive testing;,citation_abstract=A lognormal model for response times is used to check response times for aberrances in exami-nee behavior on computerized adaptive tests. Both classical procedures and Bayesian posterior predictive checks are presented. For a fixed examinee, responses and response times are independent; checks based on response times offer thus information independent of the results of checks on response patterns. Empirical examples of the use of classical and Bayesian checks for detecting two different types of aberrances in response times are presented. The detection rates for the Bayesian checks outperformed those for the classical checks, but at the cost of higher false-alarm rates. A guideline for the choice between the two types of checks is offered.;,citation_author=Wim J Van Der Linden;,citation_author=Edith M L A Van Krimpen-Stoop;,citation_publication_date=2003;,citation_cover_date=2003;,citation_year=2003;,citation_volume=68;">
+<meta name="citation_reference" content="citation_title=Careless: Procedures for computing indices of careless responding;,citation_author=Richard Yentes;,citation_author=Francisco Wilhelm;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;">
 </head>
 
-  <body class="quarto-notebook quarto-light">
+  <body class="quarto-notebook">
     <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
       
       <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
@@ -218,41 +211,27 @@
      <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">La Palma Earthquakes</h1>
+      <h1 class="title">The R &gt; E Phenomenon and the Distance-Difficulty Hypothesis: Modeling Response Time in Attitudinal Data</h1>
           </div>
 
     
     <div class="quarto-title-meta-container">
       <div class="quarto-title-meta-column-start">
-            <div class="quarto-title-meta-author">
-          <div class="quarto-title-meta-heading">Authors</div>
-          <div class="quarto-title-meta-heading">Affiliation</div>
-          
-                <div class="quarto-title-meta-contents">
-            <p class="author">Steve Purves <a href="mailto:steve@curvenote.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-0760-5497" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-          </div>
-                <div class="quarto-title-meta-contents">
-                    <p class="affiliation">
-                        Curvenote
-                      </p>
-                  </div>
-                      <div class="quarto-title-meta-contents">
-            <p class="author">Rowan Cockett <a href="https://orcid.org/0000-0002-7859-8394" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
-          </div>
-                <div class="quarto-title-meta-contents">
-                    <p class="affiliation">
-                        Curvenote
-                      </p>
-                  </div>
-                    </div>
         
         <div class="quarto-title-meta">
 
-                      
                 <div>
-            <div class="quarto-title-meta-heading">Published</div>
+            <div class="quarto-title-meta-heading">Authors</div>
             <div class="quarto-title-meta-contents">
-              <p class="date">April 18, 2025</p>
+                        <p>Nicole G. Bonge <a href="mailto:ngbonge@uark.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0003-0609-6576" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+                        <p>Ronna C. Turner <a href="mailto:rcturner@uark.edu" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-2984-7649" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+                      </div>
+          </div>
+                
+                <div>
+            <div class="quarto-title-meta-heading">Presentation Date</div>
+            <div class="quarto-title-meta-contents">
+              <p class="date">April 27, 2025</p>
             </div>
           </div>
           
@@ -266,14 +245,14 @@
     <div>
       <div class="abstract">
         <div class="block-title">Abstract</div>
-        <p>In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). …</p>
+        <p>Response time (or response latency) is a commonly used metric to assess item characteristics such as quality or comprehensibility, and respondent characteristics such as fatigue or effort. In this study, we apply response time models to attitudinal data, showing that survey item response time is related to a respondent’s latent trait level and item difficulty in relation to the respondent’s latent trait level (distance-difficulty hypothesis). We also investigate the R &gt; E phenomenon, demonstrating that respondents take longer to refute items than to endorse them. Our results indicate that response time involves complex cognitive processes, and we caution researchers against using response time as a metric when assessing item or respondent characteristics (such as respondent effort or item quality) without controlling for other factors such as trait level, distance-difficulty item-person relationships, and item agreement. It is recommended that researchers conducting data quality assessments evaluate the occurrence of low data quality flagging for participants at different construct levels, to determine whether overidentification of participants in certain ability ranges may be related to item difficulty location.</p>
       </div>
     </div>
 
     <div>
       <div class="keywords">
         <div class="block-title">Keywords</div>
-        <p>La Palma, Earthquakes</p>
+        <p>Response Time, Item Response Theory, Distance-Difficulty Hypothesis, F &gt; C Phenomenon</p>
       </div>
     </div>
 
@@ -282,13 +261,38 @@
 </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
   <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Contents</h2>
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#sec-data-methods" id="toc-sec-data-methods" class="nav-link" data-scroll-target="#sec-data-methods"><span class="header-section-number">2</span> Data &amp; Methods</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3</span> Conclusion</a></li>
+  <li><a href="#theoretical-framework" id="toc-theoretical-framework" class="nav-link" data-scroll-target="#theoretical-framework"><span class="header-section-number">2</span> Theoretical Framework</a>
+  <ul class="collapse">
+  <li><a href="#the-f-c-phenomenon" id="toc-the-f-c-phenomenon" class="nav-link" data-scroll-target="#the-f-c-phenomenon"><span class="header-section-number">2.1</span> The F &gt; C Phenomenon</a></li>
+  <li><a href="#the-distance-difficulty-hypothesis" id="toc-the-distance-difficulty-hypothesis" class="nav-link" data-scroll-target="#the-distance-difficulty-hypothesis"><span class="header-section-number">2.2</span> The Distance-Difficulty Hypothesis</a></li>
+  <li><a href="#the-tancoš-models" id="toc-the-tancoš-models" class="nav-link" data-scroll-target="#the-tancoš-models"><span class="header-section-number">2.3</span> The Tancoš Models</a></li>
+  </ul></li>
+  <li><a href="#the-proposed-models" id="toc-the-proposed-models" class="nav-link" data-scroll-target="#the-proposed-models"><span class="header-section-number">3</span> The Proposed Models</a></li>
+  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method"><span class="header-section-number">4</span> Method</a>
+  <ul class="collapse">
+  <li><a href="#participants-and-measures" id="toc-participants-and-measures" class="nav-link" data-scroll-target="#participants-and-measures"><span class="header-section-number">4.1</span> Participants and Measures</a></li>
+  <li><a href="#initial-irt-analysis" id="toc-initial-irt-analysis" class="nav-link" data-scroll-target="#initial-irt-analysis"><span class="header-section-number">4.2</span> Initial IRT Analysis</a></li>
+  <li><a href="#main-analysis" id="toc-main-analysis" class="nav-link" data-scroll-target="#main-analysis"><span class="header-section-number">4.3</span> Main Analysis</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">5</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#null-model" id="toc-null-model" class="nav-link" data-scroll-target="#null-model"><span class="header-section-number">5.1</span> Null Model</a></li>
+  <li><a href="#models-assessing-the-r-e-phenomenon" id="toc-models-assessing-the-r-e-phenomenon" class="nav-link" data-scroll-target="#models-assessing-the-r-e-phenomenon"><span class="header-section-number">5.2</span> Models Assessing the R &gt; E Phenomenon</a></li>
+  <li><a href="#models-assessing-the-distance-difficulty-hypothesis" id="toc-models-assessing-the-distance-difficulty-hypothesis" class="nav-link" data-scroll-target="#models-assessing-the-distance-difficulty-hypothesis"><span class="header-section-number">5.3</span> Models Assessing the Distance-Difficulty Hypothesis</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">6</span> Discussion</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables">Tables</a></li>
+  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures">Figures</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a>
+  <ul class="collapse">
+  <li><a href="#appendix-1.-mach-iv-scale-items" id="toc-appendix-1.-mach-iv-scale-items" class="nav-link" data-scroll-target="#appendix-1.-mach-iv-scale-items">Appendix 1. MACH-IV Scale Items</a></li>
+  <li><a href="#appendix-2.-list-of-models-used" id="toc-appendix-2.-list-of-models-used" class="nav-link" data-scroll-target="#appendix-2.-list-of-models-used">Appendix 2. List of Models Used</a></li>
+  </ul></li>
   </ul>
 </nav>
 </div>
@@ -298,384 +302,1600 @@
 
        <section id="introduction" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
-<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>eruptions <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1492</span>, <span class="dv">1585</span>, <span class="dv">1646</span>, <span class="dv">1677</span>, <span class="dv">1712</span>, <span class="dv">1949</span>, <span class="dv">1971</span>, <span class="dv">2021</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>n_eruptions <span class="ot">&lt;-</span> <span class="fu">length</span>(eruptions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [2]:</pre></div><div id="cell-fig-timeline" class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>) <span class="sc">+</span> <span class="fl">0.1</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(eruptions, <span class="fu">rep</span>(<span class="dv">0</span>, n_eruptions), </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="st">"|"</span>, <span class="at">axes =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">axis</span>(<span class="dv">1</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">box</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div id="fig-timeline" class="quarto-float quarto-figure quarto-figure-center anchored" alt="An event plot of the years of the last 8 eruptions on La Palma.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
-<a href="index_files/figure-html/fig-timeline-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Timeline of recent earthquakes on La Palma"><img src="index_files/figure-html/fig-timeline-1.png" class="img-fluid figure-img" alt="An event plot of the years of the last 8 eruptions on La Palma." width="576"></a>
+<p>As computerized psychological testing has gained popularity over the past several decades, researchers are able to collect response time information alongside item responses at minimal&nbsp;cost. It is a widely held belief among survey researchers that response time is indicative of the cognitive effort required to answer an item (Höhne et al., 2017); thus, researchers point to response time to assess item quality and comprehensibility (Bassili et al., 1996; Lenzner, 2012; Lenzner et al., 2010). Researchers have also used response time to detect respondent fatigue (Nguyen, 2017), insufficient effort responding (Bowling et al., 2023; Krosnick, 1991; Ulitzsch et al., 2022), and other aberrant response patterns (van der Linden &amp; van Krimpen-Stoop, 2003). Researchers have also used response time to investigate cognitive processes underlying item responses (De Boeck &amp; Jeon, 2019).</p>
+<p>In this study, we extend a set of models proposed by Tancoš et al.&nbsp;(2023) &nbsp;to attitudinal data and investigate how response time relates to several factors, including item difficulty, the strength of the latent trait of the respondent, and whether the respondent endorses the behavior described in the survey item. The models include an assessment of the distance-difficulty hypothesis (Lorenzo-Seva, 2007a; Thissen, 1983), which states that response time increases with decreasing person-item distance (that is, the distance between the respondent’s trait level and the item’s neutral threshold on the latent trait continuum). Moreover, we introduce the R &gt; E phenomenon, an attitudinal analog to the “F &gt; C phenomenon” seen in achievement contexts (Beckmann, 2000), where respondents take longer to provide incorrect answers than correct ones. The R &gt; E phenomenon reflects our observation that respondents take longer to disagree with an attitudinal item than to agree with it. Finally, we investigate an interaction effect between the distance-difficulty hypothesis and the R &gt; E phenomenon. Our study is designed to add to the body of literature regarding the complex processes involved in item responses and provides information about the use of response time when measuring item quality or respondent effort.</p>
+</section>
+<section id="theoretical-framework" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="theoretical-framework"><span class="header-section-number">2</span> Theoretical Framework</h2>
+<section id="the-f-c-phenomenon" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="the-f-c-phenomenon"><span class="header-section-number">2.1</span> The F &gt; C Phenomenon</h3>
+<p>In the context of achievement testing, the F &gt; C phenomenon (Beckmann, 2000), also called the I &gt; C phenomenon, posits that false responses take longer to report than correct ones. Formally the F &gt; C phenomenon is given by(Beckmann, 2000, as cited in Tancoš et al., 2023, p.&nbsp;3):</p>
+<p><span class="math display">\[
+t_{ij} = \mu + \gamma FC_{ij}+\epsilon_{ij},
+\]</span></p>
+<p>where <span class="math inline">\(t_{ij}\)</span> is the response time of person <span class="math inline">\(j\)</span> on item <span class="math inline">\(i\)</span>; <span class="math inline">\(\mu\)</span> is an intercept which describes the average time across each item and person; <span class="math inline">\(FC_{ij}\)</span> is a binary indicator of whether person <span class="math inline">\(j\)</span> answered item <span class="math inline">\(i\)</span> correctly; <span class="math inline">\(\gamma\)</span> is an unstandardized regression coefficient describing the mean difference in response time between false and correct answers; and <span class="math inline">\(\epsilon_{ij}\)</span> is a normally distributed residual. The F &gt; C phenomenon has been demonstrated to be a significant predictor of response time in a number of prior studies for cognitive and achievement testing (e.g., Goldhammer et al., 2014; Goldhammer et al., 2015; Lasry et al., 2013; Preckel &amp; Freund, 2005).</p>
+</section>
+<section id="the-distance-difficulty-hypothesis" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="the-distance-difficulty-hypothesis"><span class="header-section-number">2.2</span> The Distance-Difficulty Hypothesis</h3>
+<p>Originally proposed by Thissen (1983) and later revised by Ferrando and Lorenzo-Seva (2007a), the distance difficulty hypothesis states that the response time for an item decreases as the distance between the respondent’s ability, or trait, level (<span class="math inline">\(\theta_j\)</span>) and the item difficulty (<span class="math inline">\(b_i\)</span>), given by <span class="math inline">\(\delta_{ij}=|θ_j-b_i|\)</span> increases. That is, a respondent should take more time to answer a question that is close to their trait level. On the other hand, a respondent should take less time to answer a question that is very easy or very difficult relative to their trait level. Thissen’s model (1983, p.&nbsp;181) is given by: <span class="math display">\[ \log{(t_{ij})} = \nu + s_i+u_j - bz_{ij}+\epsilon_{ij},\]</span> where <span class="math inline">\(\log{(t_{ij})}\)</span> is a logarithmic transformation of the response time for person <span class="math inline">\(j\)</span> on item <span class="math inline">\(i\)</span> (this transformation is meant to achieve normally distributed errors <span class="math inline">\(\epsilon_{ij}\)</span>); <span class="math inline">\(\nu\)</span> is the intercept, representing the overall mean log response time; <span class="math inline">\(s_i\)</span> describes the average time respondent <span class="math inline">\(i\)</span> spent across all items; <span class="math inline">\(u_j\)</span> is the time required by a person of average ability to answer item <span class="math inline">\(j\)</span>; and <span class="math inline">\(b\)</span> is the regression coefficient representing the relationship of response latency with respondent ability and item easiness (in <span class="math inline">\(z_{ij}=a_j θ_i+c_j\)</span>, where <span class="math inline">\(a_j\)</span> is the discrimination of item <span class="math inline">\(j\)</span>, <span class="math inline">\(c_j\)</span> is the easiness of item <span class="math inline">\(j\)</span>, and <span class="math inline">\(θ_i\)</span> is the ability level of respondent <span class="math inline">\(i\)</span>). Ferrando and Lorenzo-Seva (2007a, p.&nbsp;528) proposed the following as an alternative person-item distance measure according to the two-parameter logistic (2PL) model: <span class="math display">\[\delta_{ij}=\sqrt{a_i^2 (θ_j-b_i )^2},\]</span> where <span class="math inline">\(a_i\)</span> is discrimination for item <span class="math inline">\(i\)</span>. In well-designed items, <span class="math inline">\(a_i\)</span> is positive, and in this case, we can simplify the term to <span class="math inline">\(\delta_{ij}=a_i|θ_j-b_i|\)</span>.</p>
+<p>Heretofore, the models describing the distance-difficulty hypothesis have been designed for use with binary data. Ferrando and Lorenzo-Seva (2007b, p.&nbsp;679) extended the distance-difficulty hypothesis to a model intended for use with graded or continuous items measuring a unidimensional construct, where the person-item distance is given by: <span class="math display">\[\delta_{ij}=\sqrt{(θ_i-τ_j)^2},\]</span> where <span class="math inline">\(\tau_j\)</span> is the “item threshold,” the point on the trait continuum, marking the point at which respondents are more likely to agree with an item than disagree with it. The distance-difficulty hypothesis was originally used with spatial ability (Thissen, 1983) but has also been extended to personality scales (e.g., Ferrando, 2006).</p>
+</section>
+<section id="the-tancoš-models" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="the-tancoš-models"><span class="header-section-number">2.3</span> The Tancoš Models</h3>
+<p>Tancoš et al.&nbsp;(2023) proposed two sets of models relating to fluid intelligence in children: first, a model focused on the F &gt; C phenomenon, which controls for item difficulty (<span class="math inline">\(b_i\)</span>) and respondent ability (<span class="math inline">\(\theta_j\)</span>) with an added interaction term of answer correctness (<span class="math inline">\(FC_{ij}\)</span>) and respondent ability. This model is given by (Tancoš et al., 2023, p.&nbsp;7): <span class="math display">\[\ln{(t_{ij})}=\mu+\nu_j+\beta_i+\gamma_1 FC_{ij}+\gamma_2 b_i+\gamma_3 \theta_j+\gamma_{13} FC_{ij}\theta_j+\epsilon_{ij},\]</span> where <span class="math inline">\(\ln{t_{ij}}\)</span> is a logarithmic transformation of the response time for person <span class="math inline">\(j\)</span> on item <span class="math inline">\(i\)</span>; <span class="math inline">\(\mu\)</span> is the fixed intercept (representing the time spent by an average-ability respondent on an average-difficulty item); <span class="math inline">\(\nu_j\)</span> is the random intercept for each person (general speediness of respondent <span class="math inline">\(j\)</span>; the average time respondent <span class="math inline">\(j\)</span> spent across all items); <span class="math inline">\(\beta_i\)</span> is the random intercept for each item (time required by a person of average ability to answer item <span class="math inline">\(i\)</span>); <span class="math inline">\(\gamma_1\)</span>, <span class="math inline">\(\gamma_2\)</span>, <span class="math inline">\(\gamma_3\)</span>, and <span class="math inline">\(\gamma_{13}\)</span> are the fixed effects of the corresponding predictors; and <span class="math inline">\(\epsilon_{ij}\)</span> is the normally distributed residual.</p>
+<p>The second model Tancoš et al.&nbsp;(2023) proposed assesses the distance-difficulty hypothesis and investigates its incremental validity over the F &gt; C phenomenon. This model is represented by (Tancoš et al., 2023, p.&nbsp;8): <span class="math display">\[\ln{(t_{ij})}=\mu+\nu_j+\beta_i+\gamma_4 \delta_{ij}+\gamma_1 FC_{ij}+\gamma_{14} FC_{ij} \delta_{ij}+\epsilon_{ij},\]</span> where <span class="math inline">\(\ln{(t_{ij})}\)</span> is a logarithmic transformation of the response time for person <span class="math inline">\(j\)</span> on item <span class="math inline">\(i\)</span>; <span class="math inline">\(\mu\)</span> is the fixed intercept; <span class="math inline">\(\nu_j\)</span> is the random intercept for each person; <span class="math inline">\(\beta_i\)</span> is the random intercept for each item; <span class="math inline">\(\delta_{ij}=|\theta_j-b_i|\)</span> is the absolute distance between respondent <span class="math inline">\(j\)</span>’s ability level and item <span class="math inline">\(i\)</span>’s difficulty; <span class="math inline">\(FC_{ij}\)</span> is a binary variable representing item correctness; <span class="math inline">\(\gamma_1\)</span>, <span class="math inline">\(\gamma_2\)</span>, <span class="math inline">\(\gamma_3\)</span>, and <span class="math inline">\(\gamma_{13}\)</span> are the fixed effects of the corresponding predictors; and <span class="math inline">\(\epsilon_{ij}\)</span> is the normally distributed residual.</p>
+<p>In their study, Tancoš et al.&nbsp;(2023) found that the F &gt; C phenomenon remained significant after controlling for item difficulty and person ability, with an interaction between ability level and response correctness. Furthermore, ability level impacted response time (though only in items with moderate or high difficulty), but item difficulty did not influence response time. Taken together, the results indicated that on items with moderate-to-high difficulty, children with higher ability levels took longer to report incorrect answers than children with lower ability levels. However, Tancoš et al.&nbsp;(2023) found no relationship between ability level and response time with correct answers, challenging the ‘faster equals smarter’ stereotype.</p>
+<p>Moreover, Tancoš et al.&nbsp;(2023) found incremental validity of the distance-difficulty hypothesis above and beyond the F &gt; C phenomenon, providing support for the distance-difficulty hypothesis and its interaction with the F &gt; C phenomenon. These results imply items that match a respondent’s ability level take the longest to answer, with increased time required for incorrectly answered items. Furthermore, as <span class="math inline">\(\delta_{ij}\)</span> increased, they found that the difference in response time narrows and eventually changes direction. That is, when an item is very easy or very difficult in relation to a respondent’s ability level, respondents take longer to report correct answers than false ones.</p>
+</section>
+</section>
+<section id="the-proposed-models" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="the-proposed-models"><span class="header-section-number">3</span> The Proposed Models</h2>
+<p>In this study, we adapt the Tancoš models to personality testing, using answer endorsement instead of answer correctness as an interaction term. Specifically, we test an attitudinal analog of the F &gt; C phenomenon, postulating it takes respondents more time to refute, or disagree with, an item than endorse, or agree with, it. We call this version of the F &gt; C phenomenon the ‘R &gt; E phenomenon.’ This hypothesis is related to prior research on the F &gt; C phenomenon (citation), and neuroscience research related to brain functioning during in-person interactions of agreement versus disagreement. For example, Hirsch et al.&nbsp;(2021) found that brain activity differed during interactions that included attitudinal agreement vs disagreement with lower levels of synchronous dyadic brain functioning during disagreement, potentially related to more complex cognitive load. If the R &gt; E phenomenon holds, we will then investigate whether there is a significant interaction between the R &gt; E phenomenon and the ability-difficulty distance (using an item’s neutral threshold in place of item difficulty as described by Ferrando and Lorenzo-Seva (2007a), since our data are polytomous and not binary). Such an interaction would suggest that there is a difference in the relationship between the time needed to respond to an item and the ability-difficulty distance among respondents who endorse the item and those who refute it.</p>
+</section>
+<section id="method" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="method"><span class="header-section-number">4</span> Method</h2>
+<section id="participants-and-measures" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="participants-and-measures"><span class="header-section-number">4.1</span> Participants and Measures</h3>
+<p>We examined data from the free online Machiavellianism scale (MACH-IV), developed by Christie and Geis (1970), from https://openpsychometrics.org/tests/MACH-IV. Before beginning the test, respondents agreed that their anonymous data could be used for research. Following the 20-item test, respondents were prompted with a 13-item survey containing general demographic questions. Each test question and survey question was presented on separate pages, with response time recorded as the amount of time, in milliseconds, spent per page. See Appendix 1 for MACH-IV item prompts.</p>
+<p>Prior to testing the research questions, we conducted data quality analyses to select data that are less likely to be impacted by random or careless responding, which can decrease the accuracy of results (e.g., DeSimone &amp; Harms, 2017; Huang et al., 2012). The dataset contained a vocabulary check as a direct data quality assessment in which respondents were prompted to indicate the words from a list of 16, of which they were sure they knew the definition. Three of the words were not real, so we removed responses where those words were selected. We also set aside respondents whose total test or survey time fell in the bottom or top decile, as an indirect data quality assessment. Our rationale for this choice is that respondents who fell in the bottom decile may not have spent sufficient time on the questions to provide reliable results (e.g., Reimers et al., 2023); whereas, respondents in the top decile of response time may not have completed the scale in a single sitting or without distraction. Third, we used the careless package in R (v1.2.2; Yentes &amp; Wilhelm, 2023) to quantify longstring responses, the length of the maximum uninterrupted string of identical responses. We elected to remove responses with five or more identical consecutive responses, corresponding to the 95th percentile from this sample. Note, half of the items were reverse worded, with alternating placement used (see Appendix 1). For reference, the mean and median number of identical successive responses were 2.93 and 3.0, respectively.</p>
+<p>Our final sample consisted of 11,772 adults, 48.9% female, who completed the scale in the United States and reported English was their native language. Only complete responses were considered. The average respondent age was 35.2 years, with reported ages ranging from 18 to 91 years.</p>
+</section>
+<section id="initial-irt-analysis" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="initial-irt-analysis"><span class="header-section-number">4.2</span> Initial IRT Analysis</h3>
+<p>All analyses were conducted using R Statistical Software (v4.3.2; R Core Team, 2023). We began by performing an exploratory factor analysis (EFA) using the psych package in R (v2.4.3; Revelle, 2024) with all twenty items from the MACH-IV scale, reverse-coding negatively worded items before analysis. As the purpose of this study was to test the effects of question location (difficulty) and latent ability on response time and not on the interpretation of people’s level of Machiavellianism, we choose to set aside items that did not fit a one-factor model well. We did not want the results impacted by items measuring secondary nuisance factors rather than the variables being investigated. One item had insufficient factor loading (&lt; .40). This item was set aside form the original 20, and we performed another EFA; an unweighted least squares estimation yielded sufficient factor loadings for a one-factor model. Given these results, we performed a unidimensional item response theory (IRT) analysis using the mirt R package (v1.41; Chalmers, 2012). Beginning with a comparison between the graded response model (GRM) and the generalized partial credit model (GPCM), model fit indices (AIC, BIC, SABIC, and log-likelihood) indicated that the GRM fit better than the GPCM (<a href="#tbl-Table1" class="quarto-xref">Table&nbsp;1</a>).</p>
+<p>We proceeded with the GRM, extracting each item’s neutral threshold (<span class="math inline">\(\tau_{i,N}\)</span>; the point on the latent trait continuum at which respondents are more likely to “agree” or “strongly agree” with an item than to be “neutral,” “disagree,” or “strongly disagree” with the item), discrimination (<span class="math inline">\(a_i\)</span>), and each respondent’s estimated ability parameter (<span class="math inline">\(\theta_j\)</span>). See <a href="#tbl-Table2" class="quarto-xref">Table&nbsp;2</a> for item descriptive statistics and GRM parameters. Empirical reliability was high (<span class="math inline">\(r_{\text{coefficient alpha}} = .91\)</span>).</p>
+</section>
+<section id="main-analysis" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="main-analysis"><span class="header-section-number">4.3</span> Main Analysis</h3>
+<p>Our main analysis involved two sets of nested linear multilevel regression models. The first set of models tested the R &gt; E phenomenon, controlling for item difficulty and respondent ability; the second set of models tested the distance-difficulty hypothesis and its interaction with the R &gt; E phenomenon. We used the lme4 package (v1.1-35.3; Bates et al., 2015) to estimate each model, and after estimating, we computed the variance inflation factor (VIF) using the car package (v3.1-2; Fox &amp; Weisberg, 2019) to check for multicollinearity. Finally, we used the lmerTest package (v3.1-3; Kuznetsova et al., 2017) to compare models.</p>
+<p>First, we estimated a null model (Model 0) as a baseline for both sets of models. Consistent with Tancoš et al.&nbsp;(2023), Model 0 only included fixed and random intercept terms for respondents and items; all models used logarithmic transformation of response time for the dependent variable to linearize the relationship between the predictor variables and response time. We then defined the first series of models: Model A1 includes only a binary predictor for endorsement (<span class="math inline">\(E_{ij}\)</span>); Model A2 includes two predictors, item neutral threshold (<span class="math inline">\(\tau_{i,N}\)</span>) and respondent ability (<span class="math inline">\(\theta_j\)</span>), as control variables; Model 3 includes the interaction term of answer endorsement and respondent ability to investigate the impact of respondent ability on the R &gt; E phenomenon. Model A3 is as follows:</p>
+<p><span class="math display">\[\ln{(t_{ij})}=\mu + \nu_j +\beta_i+\gamma_1E_{ij}+\gamma_2\tau_{i,N}+\gamma_3\theta_j +\gamma_{13}E_{ij}\theta_j+\epsilon_{ij},\]</span> where <span class="math inline">\(E_{ij}\)</span>, <span class="math inline">\(\tau_{i,N}\)</span>, and <span class="math inline">\(\theta_j\)</span> are defined above; <span class="math inline">\(\mu\)</span> is the fixed intercept representing the time spent by an average-ability respondent on an average-difficulty item; <span class="math inline">\(\nu_j\)</span> is the random intercept for each person (general speediness of respondent j; the average time respondent j spent across all items); <span class="math inline">\(\beta_j\)</span> is the random intercept for each item (time required by a person of average ability to answer item i); <span class="math inline">\(\gamma_1\)</span>, <span class="math inline">\(\gamma_2\)</span>, <span class="math inline">\(\gamma_3\)</span>, and <span class="math inline">\(\gamma_{13}\)</span> are the fixed effects of the corresponding predictors; and <span class="math inline">\(\epsilon_{ij}\)</span> is the normally distributed residual. See Appendix 2 for a complete list of models tested.</p>
+<p>The second set of models began with Model B1, testing the distance-difficulty hypothesis by including only the discrimination-adjusted absolute difference between the respondent ability and the neutral threshold for each item (<span class="math inline">\(\delta_{ij}=a_i |θ_j-τ_{i,N} |\)</span>). Model B2 incorporates <span class="math inline">\(E_{ij}\)</span>, a binary variable to represent the R &gt; E phenomenon, to assess the incremental validity of the R &gt; E phenomenon beyond the distance-difficulty hypothesis. Finally, Model B3 includes the interaction term of the distance <span class="math inline">\(\delta_{ij}\)</span> with answer endorsement (<span class="math inline">\(E_{ij}\)</span>), to investigate whether the distance-difficulty effect follows a different pattern when respondents endorse an item or refute it. Model B3 is given by: <span class="math display">\[\ln{(t_{ij})}=\mu+\nu_j+\beta_i+\gamma_4 \delta_{ij}+\gamma_1 E_{ij}+\gamma_{14} E_{ij}\delta_{ij}+\epsilon_{ij},\]</span> where all variables are defined as stated above.</p>
+</section>
+</section>
+<section id="results" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="results"><span class="header-section-number">5</span> Results</h2>
+<section id="null-model" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="null-model"><span class="header-section-number">5.1</span> Null Model</h3>
+<p>The null model, Model 0, provided a baseline for each set of models . The fixed intercept was significant (<span class="math inline">\(μ=8.87\)</span>, 95% CI [8.73, 9.00]) and can be interpreted as the average response time of a respondent who is of average-ability on an average-difficulty item. Transforming the parameter from its logarithmic form and converting from milliseconds to seconds, we see the average response time was 7.12 seconds. <a href="#tbl-Model0" class="quarto-xref">Table&nbsp;3</a> displays complete results for Model 0.</p>
+</section>
+<section id="models-assessing-the-r-e-phenomenon" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="models-assessing-the-r-e-phenomenon"><span class="header-section-number">5.2</span> Models Assessing the R &gt; E Phenomenon</h3>
+<p>Beginning with Model A1, we found it took respondents significantly longer to endorse an item than to refute it (<span class="math inline">\(γ_1=-0.07\)</span>, 95% CI [-0.07, -0.06]) The effect size is small, however, with the transformed parameter of 0.48 seconds, signifying the expected average difference in response time between endorsement and rejections. <a href="#tbl-ModelA1" class="quarto-xref">Table&nbsp;4</a> displays complete results for Model A1.</p>
+<p>In Model A2, the R &gt; E phenomenon remained significant after controlling for item difficulty and respondent trait level (<span class="math inline">\(γ_1=-0.04\)</span>, 95% CI [-0.04, -0.03]). Moreover, we found that respondents with higher levels of Machiavellianism took significantly less time to respond to questions than respondents with lower levels (<span class="math inline">\(γ_3=-0.04\)</span>, 95% CI [-0.05, -0.04]). Moreover, response time was significantly related to the location of the item’s neutral threshold (<span class="math inline">\(γ_2=0.19\)</span>, 95% CI [0.03, 0.35]). <a href="#tbl-ModelA2" class="quarto-xref">Table&nbsp;5</a> displays complete results for Model A2.</p>
+<p>In Model A3, the added interaction between endorsement and trait level was not significant (<span class="math inline">\(γ_{13}=0.00\)</span>, 95% CI [-0.01,0.00]). <a href="#tbl-ModelA3" class="quarto-xref">Table&nbsp;6</a> displays complete results for Model A3. Moreover, per the information criteria and goodness-of-fit measures, Model A3 did not fit the data better than the preceding model in the series (<a href="#tbl-Series1" class="quarto-xref">Table&nbsp;7</a>). Thus, we retain Model A2 as this series’ final model.</p>
+<p>All effects combined, Model A2 indicates that respondents took significantly longer to refute items than to endorse them, regardless of trait level or the item’s neutral threshold. Further, respondents took longer to answer items with higher neutral thresholds, but response time decreased with increasing trait level, holding all other variables constant. <a href="#fig-Figure1" class="quarto-xref">Figure&nbsp;1</a> reflects this pattern.</p>
+</section>
+<section id="models-assessing-the-distance-difficulty-hypothesis" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="models-assessing-the-distance-difficulty-hypothesis"><span class="header-section-number">5.3</span> Models Assessing the Distance-Difficulty Hypothesis</h3>
+<p>In Model B1, we investigated the logarithm-transform of response time as a function of the ability-difficulty distance. The effect of the ability-difficulty distance was significant (<span class="math inline">\(γ_4=-0.07\)</span>, 95% CI [-0.07, -0.06]). From this, we see the response time decreased by 6.8% with each logit unit increase of ability-difficulty distance. For example, the average response time was 7.71 seconds for respondents whose trait level matched the item’s neutral threshold (i.e., the discrimination-adjusted ability-difficulty difference was zero); response time decreases to 7.19 seconds when the ability-difficulty distance is one logit unit, and 6.70 seconds when the distance is two logit units. <a href="#tbl-ModelB1" class="quarto-xref">Table&nbsp;8</a> displays complete results for Model B1.</p>
+<p>In Model B2, we added an Endorsement fixed effect, which was significant (<span class="math inline">\(γ_1=-0.04\)</span>, 95% CI [-0.04, -0.03]), indicating endorsement resulted in a significantly shorter response time than non-endorsement. The ability-difficulty distance effect was not substantially affected by the additional predictor (<span class="math inline">\(γ_4=-0.06\)</span>, 95% CI [-0.07, -0.06]). <a href="#tbl-ModelB2" class="quarto-xref">Table&nbsp;9</a> displays complete results for Model B2.</p>
+<p>Model B3 extended Model B2 by adding the interaction of the ability-difficulty distance effect and the Endorsement effect, which was significant (<span class="math inline">\(γ_{14}=-0.01\)</span>, 95% CI [-0.01,0.00]). We see a reduced, but still significant, effect in Endorsement (<span class="math inline">\(γ_1=-0.03\)</span>, 95% CI [-0.052,-0.037]) while the estimated ability-difficulty distance effect (<span class="math inline">\(γ_4=-0.06\)</span>, 95% CI [-0.06,-0.06]) remained the same. Complete results for Model B3 are shown in <a href="#tbl-ModelB3" class="quarto-xref">Table&nbsp;10</a>.</p>
+<p>Overall, each model fit significantly better than the preceding model in the series according to model fit and information criteria (<a href="#tbl-Series2" class="quarto-xref">Table&nbsp;11</a>). Model B3 fit the data significantly better than the preceding model according to the goodness-of-fit test, AIC, and log-likelihood value. Thus, we retained Model B3 as our final model. These estimates indicate that response times were significantly lower for people whose trait was significantly farther away from the item difficulty as compared to those who trait was close to the item difficulty level, with longer times overall for respondents who rejected the item in comparison to those who endorsed the item. Although the differences were small, the impact of rejecting versus endorsing an item were larger when the item difficulty was further away from the person’s trait level. <a href="#fig-Figure2" class="quarto-xref">Figure&nbsp;2</a> displays this pattern.</p>
+</section>
+</section>
+<section id="discussion" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="discussion"><span class="header-section-number">6</span> Discussion</h2>
+<p>This study introduces the R &gt; E Phenomenon, an attitudinal extension of the F &gt; C phenomenon seen in achievement settings. In particular, we followed the Tancoš et al.&nbsp;(2023) methodology by investigating two phenomena: first, we assessed whether the R &gt; E phenomenon was a significant predictor of response time after controlling for participants’ trait levels and item difficulties (operationalized in this context as an item’s neutral threshold). Our data show that, after controlling for trait level and item difficulty, respondents took longer to refute items than to endorse them. While the effect size is small, the R &gt; E phenomenon accounts for significant variability in response time.</p>
+<p>These findings may have multiple causes. Kowalski et al.&nbsp;(2018) found Machiavellianism is positively predicted by fluid intelligence, “the ability to be flexible and to respond adaptively to novel situations” (Gilhooly &amp; Gilhooly, 2021, p.&nbsp;186). A respondent with greater fluid intelligence may be able to assess whether, and how, an item applies to their life faster than someone with a lower level of fluid intelligence. Another explanation for the observed differences in response time between endorsing and rejecting an item could be that respondents who agree with an item can more quickly articulate applications of the item to their own lives. In contrast, respondents who do not endorse an item may think through a variety of situations in which the item may apply but ultimately does not. These results may also correspond with neuroscience research (e.g., Hirsch et al., 2021) that brain functioning for interactions related to agreement may be less complex than what is used for interactions where one disagrees.</p>
+<p>Since the R &gt; E phenomenon held after controlling for participant trait level and item difficulty, we investigated the distance-difficulty hypothesis and its interaction with the R &gt; E phenomenon. We found evidence to support the distance-difficulty hypothesis in the context of an attitudinal survey, and a significant interaction between the distance-difficulty hypothesis and the R &gt; E phenomenon. The most substantial impact was the decrease in response time with increasing distance between the respondent’s trait level and the item’s neutral threshold (that is, respondents answered faster to questions they more strongly agreed or disagreed with) and overall, the time used to answer the questions was consistently longer for those rejecting the questions rather than endorsing.</p>
+<p>Response time is a metric often used to assess participants’ response effort and item characteristics including difficulty, exposure, interpretability, and suitability. Given the results of this study, we caution researchers against using response time alone to make such determinations. This study adds to the body of knowledge regarding the complexity of item response processes and challenges the practice of using response time in isolation to make determinations about respondent effort or item complexity and suitability.</p>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Bassili1996" class="csl-entry" role="listitem">
+Bassili, John N, and B Stacey Scott. 1996. <span>“Response Latency as a Signal to Question Problems in Survey Research.”</span> <em>Public Opinion Quarterly</em> 60: 390–99. <a href="https://academic.oup.com/poq/article/60/3/390/1832313">https://academic.oup.com/poq/article/60/3/390/1832313</a>.
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Timeline of recent earthquakes on La Palma
-</figcaption>
-</figure>
+<div id="ref-Bates2015" class="csl-entry" role="listitem">
+Bates, Douglas, Martin Mächler, Ben Bolker, and Steve Walker. 2015. <span>“Fitting Linear Mixed-Effects Models Using Lme4.”</span> <em>Journal of Statistical Software</em> 67: 1–48. <a href="https://doi.org/10.18637/jss.v067.i01">https://doi.org/10.18637/jss.v067.i01</a>.
+</div>
+<div id="ref-Beckmann2000" class="csl-entry" role="listitem">
+Beckmann, Jens F. 2000. <span>“Differentielle Latenzzeitefekte Bei Der Bearbeitung von Reasoning-Items.”</span> <em>Diagnostica</em> 46: 124–29.
+</div>
+<div id="ref-DeBoeck2019" class="csl-entry" role="listitem">
+Boeck, Paul De, and Minjeong Jeon. 2019. <span>“An Overview of Models for Response Times and Processes in Cognitive Tests.”</span> <em>Frontiers in Psychology</em> 10 (February). <a href="https://doi.org/10.3389/fpsyg.2019.00102">https://doi.org/10.3389/fpsyg.2019.00102</a>.
+</div>
+<div id="ref-Bowling2023" class="csl-entry" role="listitem">
+Bowling, Nathan A., Jason L. Huang, Cheyna K. Brower, and Caleb B. Bragg. 2023. <span>“The Quick and the Careless: The Construct Validity of Page Time as a Measure of Insufficient Effort Responding to Surveys.”</span> <em>Organizational Research Methods</em> 26 (April): 323–52. <a href="https://doi.org/10.1177/10944281211056520">https://doi.org/10.1177/10944281211056520</a>.
+</div>
+<div id="ref-Chalmers2012" class="csl-entry" role="listitem">
+Chalmers, R. Philip. 2012. <span>“Mirt: A Multidimensional Item Response Theory Package for the r Environment.”</span> <em>Journal of Statistical Software</em> 48: 1–29. <a href="https://doi.org/10.18637/jss.v048.i06">https://doi.org/10.18637/jss.v048.i06</a>.
+</div>
+<div id="ref-Christie1970" class="csl-entry" role="listitem">
+Christie, Richard, and Florence L. Geis. 1970. <em>Studies in Machiavellianism</em>. Elsevier. <a href="https://doi.org/10.1016/C2013-0-10497-7">https://doi.org/10.1016/C2013-0-10497-7</a>.
+</div>
+<div id="ref-DeSimone2018" class="csl-entry" role="listitem">
+DeSimone, Justin A., and P. D. Harms. 2018. <span>“Dirty Data: The Effects of Screening Respondents Who Provide Low-Quality Data in Survey Research.”</span> <em>Journal of Business and Psychology</em> 33 (October): 559–77. <a href="https://doi.org/10.1007/s10869-017-9514-9">https://doi.org/10.1007/s10869-017-9514-9</a>.
+</div>
+<div id="ref-Ferrando2006" class="csl-entry" role="listitem">
+Ferrando, Pere J. 2006. <span>“Person-Item Distance and Response Time: An Empirical Study in Personality Measurement.”</span> <em>Psicológica</em> 27: 137–48.
+</div>
+<div id="ref-Ferrando2007" class="csl-entry" role="listitem">
+Ferrando, Pere J., and Urbano Lorenzo-Seva. 2007. <span>“An Item Response Theory Model for Incorporating Response Time Data in Binary Personality Items.”</span> <em>Applied Psychological Measurement</em>. <a href="https://doi.org/10.1177/0146621606295197">https://doi.org/10.1177/0146621606295197</a>.
+</div>
+<div id="ref-Fox2019" class="csl-entry" role="listitem">
+Fox, John, and Sanford Weisberg. 2019. <em>An r Companion to Applied Regression</em>. Third. Sage.
+</div>
+<div id="ref-Gilhooly2021" class="csl-entry" role="listitem">
+Gilhooly, Kenneth J., and Mary L. M. Gilhooly. 2021. <span>“Aging Effects on Cognitive and Noncognitive Factors in Creativity.”</span> In <em>Aging and Creativity</em>, 183–216. Elsevier. <a href="https://doi.org/10.1016/b978-0-12-816401-3.00008-1">https://doi.org/10.1016/b978-0-12-816401-3.00008-1</a>.
+</div>
+<div id="ref-Hirsch2021" class="csl-entry" role="listitem">
+Hirsch, Joy, Mark Tiede, Xian Zhang, J. Adam Noah, Alexandre Salama-Manteau, and Maurice Biriotti. 2021. <span>“Interpersonal Agreement and Disagreement During Face-to-Face Dialogue: An fNIRS Investigation.”</span> <em>Frontiers in Human Neuroscience</em> 14 (January). <a href="https://doi.org/10.3389/fnhum.2020.606397">https://doi.org/10.3389/fnhum.2020.606397</a>.
+</div>
+<div id="ref-Hhne2017" class="csl-entry" role="listitem">
+Höhne, Jan Karem, Stephan Schlosser, and Dagmar Krebs. 2017. <span>“Investigating Cognitive Effort and Response Quality of Question Formats in Web Surveys Using Paradata.”</span> <em>Field Methods</em> 29 (November): 365–82. <a href="https://doi.org/10.1177/1525822X17710640">https://doi.org/10.1177/1525822X17710640</a>.
+</div>
+<div id="ref-Huang2012" class="csl-entry" role="listitem">
+Huang, Jason L., Paul G. Curran, Jessica Keeney, Elizabeth M. Poposki, and Richard P. DeShon. 2012. <span>“Detecting and Deterring Insufficient Effort Responding to Surveys.”</span> <em>Journal of Business and Psychology</em> 27 (March): 99–114. <a href="https://doi.org/10.1007/s10869-011-9231-8">https://doi.org/10.1007/s10869-011-9231-8</a>.
+</div>
+<div id="ref-Kowalski2018" class="csl-entry" role="listitem">
+Kowalski, Christopher Marcin, Katarzyna Kwiatkowska, Maria Magdalena Kwiatkowska, Klaudia Ponikiewska, Radosław Rogoza, and Julie Aitken Schermer. 2018. <span>“The Dark Triad Traits and Intelligence: Machiavellians Are Bright, and Narcissists and Psychopaths Are Ordinary.”</span> <em>Personality and Individual Differences</em> 135 (December): 1–6. <a href="https://doi.org/10.1016/j.paid.2018.06.049">https://doi.org/10.1016/j.paid.2018.06.049</a>.
+</div>
+<div id="ref-Krosnick1991" class="csl-entry" role="listitem">
+Krosnick, Jon A. 1991. <span>“Response Strategies for Coping with the Cognitive Demands of Attitude Measures in Surveys.”</span> <em>Applied Cognitive Psychology</em> 5: 213–36. <a href="https://doi.org/10.1002/acp.2350050305">https://doi.org/10.1002/acp.2350050305</a>.
+</div>
+<div id="ref-Kuznetsova2017" class="csl-entry" role="listitem">
+Kuznetsova, Alexandra, Per B. Brockhoff, and Rune H. B. Christensen. 2017. <span>“lmerTest Package: Tests in Linear Mixed Effects Models.”</span> <em>Journal of Statistical Software</em> 82: 1–26. <a href="https://doi.org/10.18637/jss.v082.i13">https://doi.org/10.18637/jss.v082.i13</a>.
+</div>
+<div id="ref-Lenzner2012" class="csl-entry" role="listitem">
+Lenzner, Timo. 2012. <span>“Effects of Survey Question Comprehensibility on Response Quality.”</span> <em>Field Methods</em> 24 (November): 409–28. <a href="https://doi.org/10.1177/1525822X12448166">https://doi.org/10.1177/1525822X12448166</a>.
+</div>
+<div id="ref-Lenzner2010" class="csl-entry" role="listitem">
+Lenzner, Timo, Lars Kaczmirek, and Alwine Lenzner. 2010. <span>“Cognitive Burden of Survey Questions and Response Times: A Psycholinguistic Experiment.”</span> <em>Applied Cognitive Psychology</em> 24 (October): 1003–20. <a href="https://doi.org/10.1002/acp.1602">https://doi.org/10.1002/acp.1602</a>.
+</div>
+<div id="ref-Nguyen2017" class="csl-entry" role="listitem">
+Nguyen, Hung Loan T. 2017. <span>“Tired of Survey Fatigue? Insufficient Effort Responding Due to Survey Fatigue.”</span> PhD thesis, Middle Tennessee State University.
+</div>
+<div id="ref-Reimers2023" class="csl-entry" role="listitem">
+Reimers, Jennifer, Ronna C. Turner, Jorge N. Tendeiro, Wen Juo Lo, and Elizabeth Keiffer. 2023. <span>“Performance of Nonparametric Person-Fit Statistics with Unfolding Versus Dominance Response Models.”</span> <em>Measurement</em> 21: 232–53. <a href="https://doi.org/10.1080/15366367.2023.2165891">https://doi.org/10.1080/15366367.2023.2165891</a>.
+</div>
+<div id="ref-Revelle2024" class="csl-entry" role="listitem">
+Revelle, William. 2024. <span>“Psych: Procedures for Psychological, Psychometric, and Personality Research.”</span> <a href="https://CRAN.R-project.org/package=psych">https://CRAN.R-project.org/package=psych</a>.
+</div>
+<div id="ref-Tanco2023" class="csl-entry" role="listitem">
+Tancoš, Martin, Edita Chvojka, Michal Jabůrek, and Šárka Portešová. 2023. <span>“Faster ≠ Smarter: Children with Higher Levels of Ability Take Longer to Give Incorrect Answers, Especially When the Task Matches Their Ability.”</span> <em>Journal of Intelligence</em> 11 (April). <a href="https://doi.org/10.3390/jintelligence11040063">https://doi.org/10.3390/jintelligence11040063</a>.
+</div>
+<div id="ref-RCoreTeam2019" class="csl-entry" role="listitem">
+Team, R Core. 2019. <span>“R: A Language and Environment for Statistical Computing.”</span> R Foundation for Statistical Computing. <a href="http://www.R-project.org/">http://www.R-project.org/</a>.
+</div>
+<div id="ref-Thissen1983" class="csl-entry" role="listitem">
+Thissen, David. 1983. <span>“Timed Testing- an Approach Using Item Response Theory.”</span> In <em>New Horizons in Testing: Latent Trait Test Theory and Computerized Adaptive Testing</em>, 179–203.
+</div>
+<div id="ref-Ulitzsch2022" class="csl-entry" role="listitem">
+Ulitzsch, Esther, Steffi Pohl, Lale Khorramdel, Ulf Kroehne, and Matthias von Davier. 2022. <span>“A Response-Time-Based Latent Response Mixture Model for Identifying and Modeling Careless and Insufficient Effort Responding in Survey Data.”</span> <em>Psychometrika</em> 87 (June): 593–619. <a href="https://doi.org/10.1007/s11336-021-09817-7">https://doi.org/10.1007/s11336-021-09817-7</a>.
+</div>
+<div id="ref-VanDerLinden2003" class="csl-entry" role="listitem">
+Van Der Linden, Wim J, and Edith M L A Van Krimpen-Stoop. 2003. <span>“Using Response Times to Detect Aberrant Responses in Computerized Adaptive Testing.”</span> <em>PSYCHOMETRIKA</em>. Vol. 68.
+</div>
+<div id="ref-Yentes2023" class="csl-entry" role="listitem">
+Yentes, Richard, and Francisco Wilhelm. 2023. <span>“Careless: Procedures for Computing Indices of Careless Responding.”</span>
 </div>
 </div>
-</div></div>
-<div class="cell-container"><div class="cell-decorator"><pre>In [3]:</pre></div><div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>avg_years_between_eruptions <span class="ot">&lt;-</span> <span class="fu">mean</span>(<span class="fu">diff</span>(eruptions[<span class="sc">-</span>n_eruptions]))</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>avg_years_between_eruptions</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 79.83333</code></pre>
-</div>
-</div></div>
-<p>Based on data up to and including 1971, eruptions on La Palma happen every 79.8 years on average.</p>
-<p>Studies of the magma systems feeding the volcano, such as <span class="citation" data-cites="marrero2019">Marrero et al. (<a href="#ref-marrero2019" role="doc-biblioref">2019</a>)</span>, have proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
-<p>Eight eruptions have been recorded since the late 1400s (<a href="#fig-timeline" class="quarto-xref">Figure&nbsp;1</a>).</p>
-<p>Data and methods are discussed in <a href="#sec-data-methods" class="quarto-xref">Section&nbsp;2</a>.</p>
-<p>Let <span class="math inline">\(x\)</span> denote the number of eruptions in a year. Then, <span class="math inline">\(x\)</span> can be modeled by a Poisson distribution</p>
-<p><span id="eq-poisson"><span class="math display">\[
-p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
-\tag{1}\]</span></span></p>
-<p>where <span class="math inline">\(\lambda\)</span> is the rate of eruptions per year. Using <a href="#eq-poisson" class="quarto-xref">Equation&nbsp;1</a>, the probability of an eruption in the next <span class="math inline">\(t\)</span> years can be calculated.</p>
-<div id="tbl-history" class="quarto-float quarto-figure quarto-figure-center anchored">
+</section>
+<section id="tables" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="tables">Tables</h2>
+<div id="tbl-Table1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-history-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: Recent historic eruptions on La Palma
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-Table1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1. IRT Model Comparison
 </figcaption>
-<div aria-describedby="tbl-history-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<div aria-describedby="tbl-Table1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th>Name</th>
-<th>Year</th>
+<th data-quarto-table-cell-role="th">Model</th>
+<th data-quarto-table-cell-role="th">AIC</th>
+<th data-quarto-table-cell-role="th">BIC</th>
+<th data-quarto-table-cell-role="th">SABIC</th>
+<th data-quarto-table-cell-role="th">Log-Likelihood</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Current</td>
-<td>2021</td>
+<td>GRM</td>
+<td>579,083.8</td>
+<td>579,780.8</td>
+<td>579,478.9</td>
+<td>-289,446.9</td>
 </tr>
 <tr class="even">
-<td>Teneguía</td>
-<td>1971</td>
-</tr>
-<tr class="odd">
-<td>Nambroque</td>
-<td>1949</td>
-</tr>
-<tr class="even">
-<td>El Charco</td>
-<td>1712</td>
-</tr>
-<tr class="odd">
-<td>Volcán San Antonio</td>
-<td>1677</td>
-</tr>
-<tr class="even">
-<td>Volcán San Martin</td>
-<td>1646</td>
-</tr>
-<tr class="odd">
-<td>Tajuya near El Paso</td>
-<td>1585</td>
-</tr>
-<tr class="even">
-<td>Montaña Quemada</td>
-<td>1492</td>
+<td>GPCM</td>
+<td>583,294.6</td>
+<td>583,991.5</td>
+<td>583,689.6</td>
+<td>-291,552.3</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p><a href="#tbl-history" class="quarto-xref">Table&nbsp;1</a> summarises the eruptions recorded since the colonization of the islands by Europeans in the late 1400s.</p>
-<div id="fig-map" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/la-palma-map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: Map of La Palma"><img src="images/la-palma-map.png" class="img-fluid figure-img"></a>
+<div id="tbl-Table2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-Table2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2. Descriptive Statistics for Items
+</figcaption>
+<div aria-describedby="tbl-Table2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th colspan="2" data-quarto-table-cell-role="th">Response</th>
+<th colspan="2" data-quarto-table-cell-role="th">Response Time (milliseconds)</th>
+</tr>
+<tr class="even">
+<th>Item</th>
+<th>Item Neutral Threshold</th>
+<th>Item Discrimination</th>
+<th>M</th>
+<th>SD</th>
+<th>M</th>
+<th>SD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>0.30</td>
+<td>1.94</td>
+<td>2.87</td>
+<td>1.52</td>
+<td>9,291.49</td>
+<td>8,165.46</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>0.22</td>
+<td>1.62</td>
+<td>2.88</td>
+<td>1.46</td>
+<td>7,775.72</td>
+<td>6,310.25</td>
+</tr>
+<tr class="odd">
+<td>3R</td>
+<td>0.22</td>
+<td>1.05</td>
+<td>3.10</td>
+<td>1.41</td>
+<td>10,281.67</td>
+<td>8,464.00</td>
+</tr>
+<tr class="even">
+<td>4R</td>
+<td>0.50</td>
+<td>1.34</td>
+<td>2.93</td>
+<td>1.38</td>
+<td>5,936.70</td>
+<td>5,586.97</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>-0.18</td>
+<td>1.52</td>
+<td>3.29</td>
+<td>1.41</td>
+<td>10,830.67</td>
+<td>8,278.18</td>
+</tr>
+<tr class="even">
+<td>6R</td>
+<td>-0.07</td>
+<td>1.62</td>
+<td>3.25</td>
+<td>1.48</td>
+<td>5,399.48</td>
+<td>5,327.17</td>
+</tr>
+<tr class="odd">
+<td>7R</td>
+<td>-0.81</td>
+<td>1.54</td>
+<td>3.78</td>
+<td>1.35</td>
+<td>6,282.45</td>
+<td>5,411.08</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>0.36</td>
+<td>1.33</td>
+<td>2.80</td>
+<td>1.46</td>
+<td>8,434.98</td>
+<td>6,999.64</td>
+</tr>
+<tr class="odd">
+<td>9R</td>
+<td>1.43</td>
+<td>2.03</td>
+<td>1.86</td>
+<td>1.20</td>
+<td>9,972.70</td>
+<td>7,810.57</td>
+</tr>
+<tr class="even">
+<td>10R</td>
+<td>0.51</td>
+<td>1.69</td>
+<td>2.67</td>
+<td>1.45</td>
+<td>15,841.10</td>
+<td>11,889.62</td>
+</tr>
+<tr class="odd">
+<td>11R</td>
+<td>-1.56</td>
+<td>1.05</td>
+<td>4.20</td>
+<td>1.04</td>
+<td>7,746.36</td>
+<td>5,758.39</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>-0.45</td>
+<td>1.50</td>
+<td>3.49</td>
+<td>1.46</td>
+<td>7,939.62</td>
+<td>6,740.82</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>0.43</td>
+<td>1.54</td>
+<td>2.68</td>
+<td>1.53</td>
+<td>10,911.95</td>
+<td>8,602.82</td>
+</tr>
+<tr class="even">
+<td>14R</td>
+<td>-0.63</td>
+<td>1.22</td>
+<td>3.76</td>
+<td>1.20</td>
+<td>5,143.86</td>
+<td>4,445.55</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>-0.18</td>
+<td>1.29</td>
+<td>3.32</td>
+<td>1.38</td>
+<td>6,622.52</td>
+<td>5,061.89</td>
+</tr>
+<tr class="even">
+<td>16R</td>
+<td>-0.29</td>
+<td>1.03</td>
+<td>3.36</td>
+<td>1.51</td>
+<td>6,896.94</td>
+<td>5,771.57</td>
+</tr>
+<tr class="odd">
+<td>17R</td>
+<td>-0.89</td>
+<td>0.94</td>
+<td>3.80</td>
+<td>1.32</td>
+<td>9,319.10</td>
+<td>6,862.45</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>-0.21</td>
+<td>1.47</td>
+<td>3.27</td>
+<td>1.42</td>
+<td>7,883.50</td>
+<td>6,581.88</td>
+</tr>
+<tr class="odd">
+<td>20</td>
+<td>1.73</td>
+<td>0.97</td>
+<td>2.04</td>
+<td>1.36</td>
+<td>12,581.28</td>
+<td>8,816.57</td>
+</tr>
+</tbody>
+</table>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Map of La Palma
+</figure>
+</div>
+<p><em>Note.</em> Items ending in “R” were reverse coded before statistical analysis.</p>
+<div id="tbl-Model0" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-Model0-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3. Parameters for Model 0
+</figcaption>
+<div aria-describedby="tbl-Model0-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th></th>
+<th></th>
+<th></th>
+<th colspan="2" style="text-align: center;">95% CI</th>
+</tr>
+<tr class="even">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Coef.</th>
+<th style="text-align: center;">Est.</th>
+<th></th>
+<th style="text-align: center;">LL</th>
+<th style="text-align: center;">UL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>Fixed Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even" style="border-bottom: 1px #919294;">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: center;">μ</td>
+<td style="text-align: center;">8.87</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">8.73</td>
+<td style="text-align: center;">9.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Random Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Person intercept variance</td>
+<td style="text-align: center;">var(<em>ν<sub>j</sub></em> )</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Item intercept variance</td>
+<td style="text-align: center;">var(<em>β<sub>i</sub></em> )</td>
+<td style="text-align: center;">0.09</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Residual Variance</td>
+<td style="text-align: center;">var(<em>ε<sub>ij</sub></em> )</td>
+<td style="text-align: center;">0.24</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><em>Note.</em> Coef – coefficient; Est – estimate; CI – confidence interval; LL – lower limit; UL – upper limit; Var – variance. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.</p>
+<div id="tbl-ModelA1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ModelA1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4. Parameters for Model A1
+</figcaption>
+<div aria-describedby="tbl-ModelA1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th></th>
+<th></th>
+<th></th>
+<th colspan="2" style="text-align: center;">95% CI</th>
+</tr>
+<tr class="even">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Coef.</th>
+<th style="text-align: center;">Est.</th>
+<th></th>
+<th style="text-align: center;">LL</th>
+<th style="text-align: center;">UL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>Fixed Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: center;">μ</td>
+<td style="text-align: center;">8.88</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">8.74</td>
+<td style="text-align: center;">9.02</td>
+</tr>
+<tr class="odd" style="border-bottom: 1px #919294;">
+<td style="text-align: left;">Endorse</td>
+<td style="text-align: center;">γ<sub>1</sub></td>
+<td style="text-align: center;">-0.04</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">-0.04</td>
+<td style="text-align: center;">-0.03</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Random Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Person intercept variance</td>
+<td style="text-align: center;">var(<em>ν<sub>j</sub></em> )</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Item intercept variance</td>
+<td style="text-align: center;">var(<em>β<sub>i</sub></em> )</td>
+<td style="text-align: center;">0.09</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Residual Variance</td>
+<td style="text-align: center;">var(<em>ε<sub>ij</sub></em> )</td>
+<td style="text-align: center;">0.24</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><em>Note.</em> Coef – coefficient; Est – estimate; CI – confidence interval; LL – lower limit; UL – upper limit; Var – variance. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.</p>
+<div id="tbl-ModelA2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ModelA2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5. Parameters for Model A2
+</figcaption>
+<div aria-describedby="tbl-ModelA2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th></th>
+<th></th>
+<th></th>
+<th colspan="2" style="text-align: center;">95% CI</th>
+</tr>
+<tr class="even">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Coef.</th>
+<th style="text-align: center;">Est.</th>
+<th></th>
+<th style="text-align: center;">LL</th>
+<th style="text-align: center;">UL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>Fixed Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: center;">μ</td>
+<td style="text-align: center;">8.88</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">8.76</td>
+<td style="text-align: center;">9.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Endorse</td>
+<td style="text-align: center;">γ<sub>1</sub></td>
+<td style="text-align: center;">-0.04</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">-0.04</td>
+<td style="text-align: center;">-0.03</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Item Neutral Threshold</td>
+<td style="text-align: center;">γ<sub>2</sub></td>
+<td style="text-align: center;">0.19</td>
+<td style="text-align: center;">*</td>
+<td style="text-align: center;">0.03</td>
+<td style="text-align: center;">0.35</td>
+</tr>
+<tr class="odd" style="border-bottom: 1px #919294;">
+<td style="text-align: left;">Person Trait Level</td>
+<td style="text-align: center;">γ<sub>3</sub></td>
+<td style="text-align: center;">-0.04</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">-0.05</td>
+<td style="text-align: center;">-0.04</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Random Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Person intercept variance</td>
+<td style="text-align: center;">var(<em>ν<sub>j</sub></em> )</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Item intercept variance</td>
+<td style="text-align: center;">var(<em>β<sub>i</sub></em> )</td>
+<td style="text-align: center;">0.07</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Residual Variance</td>
+<td style="text-align: center;">var(<em>ε<sub>ij</sub></em> )</td>
+<td style="text-align: center;">0.24</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><em>Note.</em> Coef – coefficient; Est – estimate; CI – confidence interval; LL – lower limit; UL – upper limit; Var – variance. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.</p>
+<div id="tbl-ModelA3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ModelA3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6. Parameters for Model A3
+</figcaption>
+<div aria-describedby="tbl-ModelA3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th></th>
+<th></th>
+<th></th>
+<th colspan="2" style="text-align: center;">95% CI</th>
+</tr>
+<tr class="even">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Coef.</th>
+<th style="text-align: center;">Est.</th>
+<th></th>
+<th style="text-align: center;">LL</th>
+<th style="text-align: center;">UL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>Fixed Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: center;">μ</td>
+<td style="text-align: center;">8.88</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">8.76</td>
+<td style="text-align: center;">9.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Endorse</td>
+<td style="text-align: center;">γ<sub>1</sub></td>
+<td style="text-align: center;">-0.04</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">-0.04</td>
+<td style="text-align: center;">-0.03</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Item Neutral Threshold</td>
+<td style="text-align: center;">γ<sub>2</sub></td>
+<td style="text-align: center;">0.19</td>
+<td style="text-align: center;">*</td>
+<td style="text-align: center;">0.02</td>
+<td style="text-align: center;">0.35</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Person Trait Level</td>
+<td style="text-align: center;">γ<sub>3</sub></td>
+<td style="text-align: center;">-0.04</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">-0.05</td>
+<td style="text-align: center;">-0.04</td>
+</tr>
+<tr class="even" style="border-bottom: 1px #919294;">
+<td style="text-align: left;">Endorse x Trait Level</td>
+<td style="text-align: center;">γ<sub>13</sub></td>
+<td style="text-align: center;">0.00</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-0.01</td>
+<td style="text-align: center;">0.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Random Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Person intercept variance</td>
+<td style="text-align: center;">var(<em>ν<sub>j</sub></em> )</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Item intercept variance</td>
+<td style="text-align: center;">var(<em>β<sub>i</sub></em> )</td>
+<td style="text-align: center;">0.07</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Residual Variance</td>
+<td style="text-align: center;">var(<em>ε<sub>ij</sub></em> )</td>
+<td style="text-align: center;">0.24</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><em>Note.</em> Coef – coefficient; Est – estimate; CI – confidence interval; LL – lower limit; UL – upper limit; Var – variance. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.</p>
+<div id="tbl-Series1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-Series1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;7. Model Fit For Series 1 Models
+</figcaption>
+<div aria-describedby="tbl-Series1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Model 0</th>
+<th data-quarto-table-cell-role="th">Model A1</th>
+<th data-quarto-table-cell-role="th">Model A2</th>
+<th data-quarto-table-cell-role="th">Model A3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Conditional <em>R<sup>2</sup></em></td>
+<td>.36</td>
+<td>.37</td>
+<td>.37</td>
+<td>.37</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Marginal <em>R<sup>2</sup></em></td>
+<td>.00</td>
+<td>.00</td>
+<td>.06</td>
+<td>.06</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Log-likelihood</td>
+<td>-159,795.6</td>
+<td>-159,668.0</td>
+<td>-159,497.3</td>
+<td>-159,497.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AIC</td>
+<td>319,599.1</td>
+<td>319,345.9</td>
+<td>319,008.7</td>
+<td>319,010.7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BIC</td>
+<td>319,640.2</td>
+<td>319,397.3</td>
+<td>319,080.7</td>
+<td>319,092.9</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Δχ<sup>2</sup>(df)</td>
+<td></td>
+<td>255.2(1)***</td>
+<td>341.2(2)***</td>
+<td>0.02(1)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-ModelB1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ModelB1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;8. Parameters for Model B1
+</figcaption>
+<div aria-describedby="tbl-ModelB1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th></th>
+<th></th>
+<th></th>
+<th colspan="2" style="text-align: center;">95% CI</th>
+</tr>
+<tr class="even">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Coef.</th>
+<th style="text-align: center;">Est.</th>
+<th></th>
+<th style="text-align: center;">LL</th>
+<th style="text-align: center;">UL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>Fixed Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: center;">μ</td>
+<td style="text-align: center;">8.95</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">8.81</td>
+<td style="text-align: center;">9.09</td>
+</tr>
+<tr class="odd" style="border-bottom: 1px #919294;">
+<td style="text-align: left;">Ability-Diffiulty Distance</td>
+<td style="text-align: center;">γ<sub>4</sub></td>
+<td style="text-align: center;">-0.07</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">-0.07</td>
+<td style="text-align: center;">-0.06</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Random Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Person intercept variance</td>
+<td style="text-align: center;">var(<em>ν<sub>j</sub></em> )</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Item intercept variance</td>
+<td style="text-align: center;">var(<em>β<sub>i</sub></em> )</td>
+<td style="text-align: center;">0.09</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Residual Variance</td>
+<td style="text-align: center;">var(<em>ε<sub>ij</sub></em> )</td>
+<td style="text-align: center;">0.23</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><em>Note.</em> Coef – coefficient; Est – estimate; CI – confidence interval; LL – lower limit; UL – upper limit; Var – variance. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.</p>
+<div id="tbl-ModelB2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ModelB2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;9. Parameters for Model B2
+</figcaption>
+<div aria-describedby="tbl-ModelB2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th></th>
+<th></th>
+<th></th>
+<th colspan="2" style="text-align: center;">95% CI</th>
+</tr>
+<tr class="even">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Coef.</th>
+<th style="text-align: center;">Est.</th>
+<th></th>
+<th style="text-align: center;">LL</th>
+<th style="text-align: center;">UL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>Fixed Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: center;">μ</td>
+<td style="text-align: center;">8.97</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">8.82</td>
+<td style="text-align: center;">9.11</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Endorse</td>
+<td style="text-align: center;">γ<sub>1</sub></td>
+<td style="text-align: center;">-0.04</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">-0.04</td>
+<td style="text-align: center;">-0.03</td>
+</tr>
+<tr class="even" style="border-bottom: 1px #919294;">
+<td style="text-align: left;">Person-Item Distance</td>
+<td style="text-align: center;">γ<sub>4</sub></td>
+<td style="text-align: center;">-0.09</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">-0.11</td>
+<td style="text-align: center;">-0.08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Random Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Person intercept variance</td>
+<td style="text-align: center;">var(<em>ν<sub>j</sub></em> )</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Item intercept variance</td>
+<td style="text-align: center;">var(<em>β<sub>i</sub></em> )</td>
+<td style="text-align: center;">0.09</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Residual Variance</td>
+<td style="text-align: center;">var(<em>ε<sub>ij</sub></em> )</td>
+<td style="text-align: center;">0.23</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><em>Note.</em> Coef – coefficient; Est – estimate; CI – confidence interval; LL – lower limit; UL – upper limit; Var – variance. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.</p>
+<div id="tbl-ModelB3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ModelB3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10. Parameters for Model B3
+</figcaption>
+<div aria-describedby="tbl-ModelB3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th></th>
+<th></th>
+<th></th>
+<th colspan="2" style="text-align: center;">95% CI</th>
+</tr>
+<tr class="even">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Coef.</th>
+<th style="text-align: center;">Est.</th>
+<th></th>
+<th style="text-align: center;">LL</th>
+<th style="text-align: center;">UL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><em>Fixed Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Intercept</td>
+<td style="text-align: center;">μ</td>
+<td style="text-align: center;">8.96</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">8.82</td>
+<td style="text-align: center;">9.10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Endorse</td>
+<td style="text-align: center;">γ<sub>1</sub></td>
+<td style="text-align: center;">-0.03</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">-0.03</td>
+<td style="text-align: center;">-0.02</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ability-Diffiulty Distance</td>
+<td style="text-align: center;">γ<sub>4</sub></td>
+<td style="text-align: center;">-0.06</td>
+<td style="text-align: center;">***</td>
+<td style="text-align: center;">-0.06</td>
+<td style="text-align: center;">-0.06</td>
+</tr>
+<tr class="odd" style="border-bottom: 1px #919294;">
+<td style="text-align: left;">Endorse x Distance</td>
+<td style="text-align: center;">γ<sub>14</sub></td>
+<td style="text-align: center;">-0.01</td>
+<td style="text-align: center;">**</td>
+<td style="text-align: center;">-0.01</td>
+<td style="text-align: center;">-0.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Random Effects</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Person intercept variance</td>
+<td style="text-align: center;">var(<em>ν<sub>j</sub></em> )</td>
+<td style="text-align: center;">0.05</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Item intercept variance</td>
+<td style="text-align: center;">var(<em>β<sub>i</sub></em> )</td>
+<td style="text-align: center;">0.09</td>
+<td style="text-align: center;">***</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Residual Variance</td>
+<td style="text-align: center;">var(<em>ε<sub>ij</sub></em> )</td>
+<td style="text-align: center;">0.23</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><em>Note.</em> Coef – coefficient; Est – estimate; CI – confidence interval; LL – lower limit; UL – upper limit; Var – variance. * p &lt; .05, ** p &lt; .01, *** p &lt; .001.</p>
+<div id="tbl-Series2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-Series2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;11. Model Fit For Series 2 Models
+</figcaption>
+<div aria-describedby="tbl-Series2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Model 0</th>
+<th data-quarto-table-cell-role="th">Model B1</th>
+<th data-quarto-table-cell-role="th">Model B2</th>
+<th data-quarto-table-cell-role="th">Model B3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Conditional <em>R<sup>2</sup></em></td>
+<td>.36</td>
+<td>.39</td>
+<td>.39</td>
+<td>.39</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Marginal <em>R<sup>2</sup></em></td>
+<td>.00</td>
+<td>.01</td>
+<td>.01</td>
+<td>.01</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Log-likelihood</td>
+<td>-159,795.6</td>
+<td>-158,609.8</td>
+<td>-158,495.8</td>
+<td>-158,490.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AIC</td>
+<td>319,599.1</td>
+<td>317,229.7</td>
+<td>317,003.6</td>
+<td>316,994.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BIC</td>
+<td>319,640.2</td>
+<td>317,281.1</td>
+<td>317,065.3</td>
+<td>317,066.6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Δχ<sup>2</sup>(df)</td>
+<td></td>
+<td>2,371.45(1)***</td>
+<td>228.09(1)***</td>
+<td>10.94(1)***</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="figures" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="figures">Figures</h2>
+<div id="fig-Figure1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Figure1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/Poster-Figure-1-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1. From Model A3, predicted response times according to respondent’s trait level and whether the respondent rejected the item (red) or endorsed it (green)."><img src="images/Poster-Figure-1-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Figure1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1. From Model A3, predicted response times according to respondent’s trait level and whether the respondent rejected the item (red) or endorsed it (green).
 </figcaption>
 </figure>
 </div>
-<p>La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (<a href="#fig-map" class="quarto-xref">Figure&nbsp;2</a>).</p>
-<div class="quarto-embed-nb-cell" data-notebook="/home/runner/work/AERA2025/AERA2025/notebooks/explore-earthquakes.qmd" data-notebook-title="Explore Earthquakes" data-notebook-cellid="cell-fig-spatial-plot">
-<div class="cell-container"><div class="cell-decorator"><pre>In [4]:</pre></div><div id="cell-fig-spatial-plot" class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>la_palma <span class="op">|&gt;</span> </span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  ggplot(aes(Longitude, Latitude)) <span class="op">+</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  geom_point(aes(color <span class="op">=</span> Magnitude, size <span class="op">=</span> <span class="dv">40</span><span class="op">-</span>`Depth(km)`)) <span class="op">+</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  scale_color_viridis_c(direction <span class="op">=</span> <span class="op">-</span><span class="dv">1</span>) <span class="op">+</span> </span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  scale_size(<span class="bu">range</span> <span class="op">=</span> c(<span class="fl">0.5</span>, <span class="dv">2</span>), guide <span class="op">=</span> <span class="st">"none"</span>) <span class="op">+</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  theme_bw()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div id="fig-spatial-plot" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A scatterplot of earthquake locations plotting latitude against longitude.">
+<div id="fig-Figure2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-spatial-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="">
-<a href="index_files/figure-html/notebooks-explore-earthquakes-fig-spatial-plot-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: Locations of earthquakes on La Palma since 2017"><img src="index_files/figure-html/notebooks-explore-earthquakes-fig-spatial-plot-output-1.png" class="img-fluid figure-img" alt="A scatterplot of earthquake locations plotting latitude against longitude."></a>
+<div aria-describedby="fig-Figure2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/Poster-Figure-2-01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2. From Model B3, predicted response times according to the discrimination-adjusted distance between the respondent’s trait level and the item’s neutral threshold (“ability-difficulty distance”), by whether the respondent rejected the item (red) or endorsed it (green)."><img src="images/Poster-Figure-2-01.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-spatial-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Locations of earthquakes on La Palma since 2017
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Figure2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2. From Model B3, predicted response times according to the discrimination-adjusted distance between the respondent’s trait level and the item’s neutral threshold (“ability-difficulty distance”), by whether the respondent rejected the item (red) or endorsed it (green).
 </figcaption>
 </figure>
 </div>
-</div>
-</div></div>
-</div>
-<p><a href="#fig-spatial-plot" class="quarto-xref">Figure&nbsp;3</a> shows the location of recent Earthquakes on La Palma.</p>
 </section>
-<section id="sec-data-methods" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="sec-data-methods"><span class="header-section-number">2</span> Data &amp; Methods</h2>
+<section id="appendix" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="appendix">Appendix</h2>
+<section id="appendix-1.-mach-iv-scale-items" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="appendix-1.-mach-iv-scale-items">Appendix 1. MACH-IV Scale Items</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 73%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Item</strong></td>
+<td><strong>Prompt</strong></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Never tell anyone the real reason you did something unless it is useful to do so.</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>The best way to handle people is to tell them what they want to hear.</td>
+</tr>
+<tr class="even">
+<td>3R</td>
+<td>One should take action only when sure it is morally right.</td>
+</tr>
+<tr class="odd">
+<td>4R</td>
+<td>Most people are basically good and kind.</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>It is safest to assume that all people have a vicious streak and it will come out when they are given a chance.</td>
+</tr>
+<tr class="odd">
+<td>6R</td>
+<td>Honesty is the best policy in all cases.</td>
+</tr>
+<tr class="even">
+<td>7R</td>
+<td>There is no excuse for lying to someone else.</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>Generally speaking, people won’t work hard unless they’re forced to do so.</td>
+</tr>
+<tr class="even">
+<td>9R</td>
+<td>All in all, it is better to be humble and honest than to be important and dishonest.</td>
+</tr>
+<tr class="odd">
+<td>10R</td>
+<td>When you ask someone to do something for you, it is best to give the real reasons for wanting it rather than giving reasons which carry more weight.</td>
+</tr>
+<tr class="even">
+<td>11R</td>
+<td>Most people who get ahead in the world lead clean, moral lives.</td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>Anyone who completely trusts anyone else is asking for trouble.</td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>The biggest difference between most criminals and other people is that the criminals are stupid enough to get caught.</td>
+</tr>
+<tr class="odd">
+<td>14R</td>
+<td>Most people are brave.</td>
+</tr>
+<tr class="even">
+<td>15</td>
+<td>It is wise to flatter important people.</td>
+</tr>
+<tr class="odd">
+<td>16R</td>
+<td>It is possible to be good in all respects.</td>
+</tr>
+<tr class="even">
+<td>17</td>
+<td>P.T. Barnum was wrong when he said that there’s a sucker born every minute.</td>
+</tr>
+<tr class="odd">
+<td>18</td>
+<td>It is hard to get ahead without cutting corners here and there.</td>
+</tr>
+<tr class="even">
+<td>19*</td>
+<td>People suffering from incurable diseases should have the choice of being put painlessly to death.</td>
+</tr>
+<tr class="odd">
+<td>20</td>
+<td>Most people forget more easily the death of their parents than the loss of their property.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note.</em> Items ending in * were dropped due to insufficient factor loadings. Reprinted from Christie and Geis (1970).</p>
 </section>
-<section id="conclusion" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">3</span> Conclusion</h2>
+<section id="appendix-2.-list-of-models-used" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="appendix-2.-list-of-models-used">Appendix 2. List of Models Used</h3>
+<p>Null Model (Model 0):</p>
+<p><span class="math display">\[
+\ln{(t_{ij})} = \mu + \nu_j + \beta_i + \epsilon_{ij}
+\]</span></p>
+<p>Model A1:</p>
+<p><span class="math display">\[
+\ln{(t_{ij})} = \mu + \nu_j + \beta_i + \gamma_1 E_{ij} + \epsilon_{ij}
+\]</span></p>
+<p>Model A2:</p>
+<p><span class="math display">\[
+\ln{(t_{ij})} = \mu + \nu_j + \beta_i + \gamma_1 E_{ij} + \gamma_2\tau_{i,N} + \gamma_3 \theta_j + \epsilon_{ij}
+\]</span></p>
+<p>Model A3:</p>
+<p><span class="math display">\[
+\ln{(t_{ij})} = \mu + \nu_j + \beta_i + \gamma_1 E_{ij} + \gamma_2\tau_{i,N} + \gamma_3 \theta_j + \gamma_{13} E_{ij} \theta_j+ \epsilon_{ij}
+\]</span></p>
+<p>Model B1:</p>
+<p><span class="math display">\[\begin{align}
+\ln{(t_{ij})} &amp;= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \epsilon_{ij} \\
+&amp;=\mu + \nu_j +\beta_i +\gamma_4\delta_{ij}+\epsilon_{ij}
+\end{align}\]</span></p>
+<p>Model B2:</p>
+<p><span class="math display">\[\begin{align}
+\ln{(t_{ij})} &amp;= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \gamma_1E_{ij}+\epsilon_{ij} \\
+&amp;=\mu + \nu_j +\beta_i +\gamma_4\delta_{ij}+\gamma_1 E_{ij}+\epsilon_{ij}
+\end{align}\]</span></p>
+<p>Model B3:</p>
+<p><span class="math display">\[\begin{align}
+\ln{(t_{ij})} &amp;= \mu + \nu_j + \beta_i + \gamma_4 a_i |\theta_j - \tau_{i,N}|+ \gamma_1E_{ij}+\gamma_{14}E_{ij}a_i|\theta_j-\tau_{i,N}|+\epsilon_{ij} \\
+&amp;=\mu + \nu_j +\beta_i +\gamma_4\delta_{ij}+\gamma_1 E_{ij}+\gamma_{14}E_{ij}\delta_{ij}+\epsilon_{ij}
+\end{align}\]</span></p>
 </section>
-<section id="references" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-marrero2019" class="csl-entry" role="listitem">
-Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rodríguez-Losada, and R. Ortiz. 2019. <span>“Strategies for the Development of Volcanic Hazard Maps in Monogenetic Volcanic Fields: The Example of <span>La</span> <span>Palma</span> (<span>Canary</span> <span>Islands</span>).”</span> <em>Journal of Applied Volcanology</em> 8 (July). <a href="https://doi.org/10.1186/s13617-019-0085-5">https://doi.org/10.1186/s13617-019-0085-5</a>.
-</div>
-</div>
 </section>
      </main>
 <!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
       }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
-        }
-        return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
         }
       }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
     }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
     }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
       } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
         }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
       }
     }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
           }
         } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
+          // See if we can fetch this
+          fetch(url.split('#')[0])
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
+            const note = htmlDoc.getElementById(id);
             if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
+              const html = processXRef(id, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -683,161 +1903,185 @@ Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rod
             instance.show();
           });
         }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
       } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
             }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
         });
       }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
     }
-  });
-  </script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>  </div> <!-- /content -->  <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
