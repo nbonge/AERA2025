@@ -6,10 +6,14 @@ author:
     orcid: 0009-0003-0609-6576
     corresponding: false
     email: ngbonge@uark.edu
+    affiliations:
+      - University of Arkansas
   - name: Ronna C. Turner
     orcid: 0000-0002-2984-7649
     corresponding: true
     email: rcturner@uark.edu
+    affiliations:
+      - University of Arkansas
 keywords:
   - Response Time
   - Item Response Theory
